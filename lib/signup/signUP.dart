@@ -31,7 +31,7 @@ class Scenee extends StatelessWidget {
                 padding:
                     EdgeInsets.fromLTRB(0 * fem, 180 * fem, 0 * fem, 0 * fem),
                 width: 388 * fem,
-                height: 646 * fem,
+                height: double.infinity,
                 child: ClipRect(
                   child: Align(
                     alignment: Alignment.bottomCenter,
@@ -75,7 +75,7 @@ class Scenee extends StatelessWidget {
                                 margin: EdgeInsets.fromLTRB(
                                     0 * fem, 0 * fem, 16 * fem, 21 * fem),
                                 width: 372 * fem,
-                                height: 300 * fem,
+                                height: 400 * fem,
                                 child: Stack(
                                   children: [
                                     Positioned(
@@ -83,7 +83,7 @@ class Scenee extends StatelessWidget {
                                       top: 0 * fem,
                                       child: Container(
                                         width: 349 * fem,
-                                        height: 164.18 * fem,
+                                        height: 350 * fem,
                                         child: Padding(
                                           padding:
                                               const EdgeInsets.only(top: 15.0,),
