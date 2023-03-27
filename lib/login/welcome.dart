@@ -197,12 +197,10 @@ class Scene extends StatelessWidget {
                                                             splashColor: const Color(0x5D6978),
                                                             color: const Color(0xFFD8914D),
                                                             textColor: Colors.white,
-
-
                                                             height: 50,
                                                             minWidth: 200,
                                                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                                                            child: DefaultTextStyle(
+                                                            child: const DefaultTextStyle(
                                                               style: TextStyle(
                                                                 fontSize: 30,
                                                                 fontWeight: FontWeight.bold,
@@ -215,12 +213,158 @@ class Scene extends StatelessWidget {
                                                             ),
                                                           ),),
                                                       ),
+                                                      Positioned(
+                                                        // orcontinuewithJ77 (4:269)
+                                                        left: 138*fem,
+                                                        top: 274*fem,
+                                                        child: Align(
+                                                          child: SizedBox(
+                                                            width: 99*fem,
+                                                            height: 18*fem,
+                                                            child: Text(
+                                                              'Or continue with',
+                                                              textAlign: TextAlign.center,
+                                                              style: GoogleFonts.poppins(
+                                                                fontSize: 12*ffem,
+                                                                fontWeight: FontWeight.w500,
+                                                                height: 1.5*ffem/fem,
+                                                                color: Color(0xffffffff),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Positioned(
+                                                        // group1773XEm (4:270)
+                                                        left: 55*fem,
+                                                        top: 310*fem,
+                                                        child: Container(
+                                                          width: 500*fem,
+                                                          height: 48*fem,
+                                                          child: Row(
+                                                            crossAxisAlignment: CrossAxisAlignment.center,
+                                                            children: [
+                                                              Container(
+                                                                // group17702BX (4:271)
+                                                                padding: EdgeInsets.fromLTRB(20.67*fem, 10.67*fem, 20.67*fem, 10.67*fem),
+                                                                height: double.infinity,
+                                                                decoration: BoxDecoration (
+                                                                  border: Border.all(color: Color(0x19000000)),
+                                                                  color: Color(0x28ffffff),
+                                                                  borderRadius: BorderRadius.circular(8*fem),
+                                                                ),
+                                                                child: Center(
+                                                                  // flatcoloriconsgoogleWMb (4:273)
+                                                                  child: SizedBox(
+                                                                    width: 26.67*fem,
+                                                                    height: 26.67*fem,
+                                                                    child: Image.asset(
+                                                                      'images/iimage/google icon.png',
+                                                                      width: 26.67*fem,
+                                                                      height: 26.67*fem,
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              SizedBox(
+                                                                width: 32*fem,
+                                                              ),
+                                                              Container(
+                                                                // group17719vM (4:278)
+                                                                padding: EdgeInsets.fromLTRB(20.67*fem, 10.67*fem, 20.67*fem, 10.67*fem),
+                                                                height: double.infinity,
+                                                                decoration: BoxDecoration (
+                                                                  border: Border.all(color: Color(0x19000000)),
+                                                                  color: Color(0x28ffffff),
+                                                                  borderRadius: BorderRadius.circular(8*fem),
+                                                                ),
+                                                                child: Center(
+                                                                  // cibappleqYH (4:280)
+                                                                  child: SizedBox(
+                                                                    width: 22*fem,
+                                                                    height: 26*fem,
+                                                                    child: Image.asset(
+                                                                      'images/iimage/apple icon.png',
+                                                                      width: 22*fem,
+                                                                      height: 26*fem,
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                              SizedBox(
+                                                                width: 32*fem,
+                                                              ),
+                                                              Container(
+                                                                // group1772VMw (4:282)
+                                                                padding: EdgeInsets.fromLTRB(20.67*fem, 10.67*fem, 20.67*fem, 10.67*fem),
+                                                                height: double.infinity,
+                                                                decoration: BoxDecoration (
+                                                                  border: Border.all(color: Color(0x19000000)),
+                                                                  color: Color(0x28ffffff),
+                                                                  borderRadius: BorderRadius.circular(8*fem),
+                                                                ),
+                                                                child: Center(
+                                                                  // frame1BkZ (4:284)
+                                                                  child: SizedBox(
+                                                                    width: 30*fem,
+                                                                    height: 25*fem,
+                                                                    child: Image.asset(
+                                                                      'images/iimage/twitter.png',
+                                                                      width: 30*fem,
+                                                                      height: 25*fem,
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Container(
+                                                        // joinusfAu (4:257)
+                                                        margin: EdgeInsets.fromLTRB(85.5*fem, 365*fem, 63.5*fem, 0*fem),
+                                                        child: TextButton(
+                                                          onPressed: () {},
+                                                          style: TextButton.styleFrom (
+                                                            padding: EdgeInsets.zero,
+                                                          ),
+                                                          child: Container(
+                                                            width: double.infinity,
+                                                            child: Row(
+                                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                                              children: [
+                                                                Container(
+                                                                  // donthaveanaccountWxD (4:258)
+                                                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 0*fem),
+                                                                  child: Text(
+                                                                    'Don’t have an account ?',
+                                                                    style: GoogleFonts.poppins(
+                                                                      fontSize: 12*ffem,
+                                                                      fontWeight: FontWeight.w400,
+                                                                      height: 1.5*ffem/fem,
+                                                                      color: Color(0xffffffff),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                Text(
+                                                                  // registeryqo (4:259)
+                                                                  'Register',
+                                                                  style: GoogleFonts.poppins(
+                                                                    fontSize: 12*ffem,
+                                                                    fontWeight: FontWeight.w700,
+                                                                    height: 1.5*ffem/fem,
+                                                                    color: Color(0xff778eff),
+                                                                  ),
+                                                                ),
                                                     ],
                                                   ),
                                                 ),
                                               ),
                                             ),
+
                                           ],
-                                        ))))))))));
+                                        ))))])))))))))
+    );
+
   }
 }
