@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:smarthome21/signup/signUP.dart.dart';
-// import 'package:smarthome21/welcome/login.dart';
+import 'package:smarthome21/forgetpassword/forgetPass.dart';
 
-import 'signup/signUP.dart';
-//import 'package:smarthome21/welcome/login.dart';
+//import 'login/welcome.dart';
+//import 'signup/signUP.dart';
+import 'package:smarthome21/forgetpassword/forgetPass.dart';
 
 
 void main() {
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scenee(),
+      home:  const Sceneee(),
     );
   }
 }
