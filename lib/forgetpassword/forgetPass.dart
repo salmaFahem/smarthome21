@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
-
 import 'package:google_fonts/google_fonts.dart';
 
 class Sceneee extends StatelessWidget {
@@ -146,7 +145,11 @@ class Sceneee extends StatelessWidget {
                                       left: 0 * fem,
                                       top: 163.0586595535 * fem,
                                       child: TextButton(
-                                        onPressed: () {},
+                                         onPressed: () {
+                                           //Navigator.push(
+                                            //context,
+                                            //MaterialPageRoute(builder: (context) => const Scene()));
+                                           },
                                         style: TextButton.styleFrom(
                                             primary: Colors.white),
                                         child: Text(

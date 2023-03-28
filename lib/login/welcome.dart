@@ -3,6 +3,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../forgetpassword/forgetPass.dart';
+import '../signup/signUP.dart';
+
 class Scene extends StatelessWidget {
   const Scene({Key? key}) : super(key: key);
 
@@ -179,7 +182,10 @@ class Scene extends StatelessWidget {
                                                         left: 0 * fem,
                                                         top: 163.0586595535 * fem,
                                                         child: TextButton(
-                                                          onPressed: () {},
+                                                          onPressed: () {Navigator.push(
+                                                              context,
+                                                              MaterialPageRoute(
+                                                                  builder: (context) => const Sceneee()));},
                                                           style: TextButton.styleFrom(
                                                               primary: Colors.red),
                                                           child: const Text(
@@ -346,9 +352,16 @@ class Scene extends StatelessWidget {
                                                                     ),
                                                                   ),
                                                                 ),
-                                                                Text(
+                                                          Container(
+                                                          child: TextButton(
+                                                            onPressed: () {Navigator.push(
+                                                                context,
+                                                                MaterialPageRoute(
+                                                                    builder: (context) => const Scenee()));},
+                                                                child: Text(
                                                                   // registeryqo (4:259)
                                                                   'Register',
+
                                                                   style: GoogleFonts.poppins(
                                                                     fontSize: 12*ffem,
                                                                     fontWeight: FontWeight.w700,
@@ -356,6 +369,8 @@ class Scene extends StatelessWidget {
                                                                     color: Color(0xff778eff),
                                                                   ),
                                                                 ),
+                                                          ),
+                                                          ),
                                                     ],
                                                   ),
                                                 ),

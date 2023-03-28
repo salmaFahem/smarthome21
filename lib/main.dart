@@ -2,11 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:smarthome21/forgetpassword/forgetPass.dart';
 
-//import 'login/welcome.dart';
-//import 'signup/signUP.dart';
+
+import 'login/welcome.dart';
+import 'signup/signUP.dart';
 import 'package:smarthome21/forgetpassword/forgetPass.dart';
+import 'package:smarthome21/profil/my%20profil.dart';
+import 'package:smarthome21/bedroom/bed_room.dart';
+import 'package:smarthome21/rooms/room.dart';
+import 'package:smarthome21/security/securityhouse.dart';
+import 'package:smarthome21/adddevice/add_device.dart';
+import 'package:smarthome21/bathroom/bath_room.dart';
+import 'package:smarthome21/devices/my_devices.dart';
+import 'package:smarthome21/livingroom/living_room.dart';
+import 'package:smarthome21/settings/my_setting.dart';
 
 
 void main() {
@@ -33,7 +42,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  const Sceneee(),
+      home:  const Scene8(),
     );
   }
 }

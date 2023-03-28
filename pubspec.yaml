@@ -67,6 +67,16 @@ flutter:
      - images/iimage/apple icon.png
      - images/iimage/google icon.png
      - images/iimage/twitter.png
+     - images/iimage/profil.png
+     - images/iimage/bed room.png
+     - images/iimage/room.png
+     - images/iimage/security.png
+     - images/iimage/setting.png
+     - images/iimage/bathroom.png
+     - images/iimage/devices.png
+     - images/iimage/living room.png
+     - images/iimage/notification.png
+     - images/iimage/add device.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
