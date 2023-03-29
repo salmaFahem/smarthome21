@@ -5,12 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 
 import 'login/welcome.dart';
-import 'signup/signUP.dart';
-import 'package:smarthome21/forgetpassword/forgetPass.dart';
-import 'package:smarthome21/profil/my%20profil.dart';
+import 'signup/sign_up.dart';
+import 'package:smarthome21/forgetpassword/forget_pass.dart';
+import 'package:smarthome21/profil/my_profil.dart';
 import 'package:smarthome21/bedroom/bed_room.dart';
 import 'package:smarthome21/rooms/room.dart';
-import 'package:smarthome21/security/securityhouse.dart';
+import 'package:smarthome21/security/security_house.dart';
 import 'package:smarthome21/adddevice/add_device.dart';
 import 'package:smarthome21/bathroom/bath_room.dart';
 import 'package:smarthome21/devices/my_devices.dart';
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  const Scene8(),
+      home:  const Scene4(),
     );
   }
 }

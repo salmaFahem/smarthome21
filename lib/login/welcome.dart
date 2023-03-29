@@ -3,8 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../forgetpassword/forgetPass.dart';
-import '../signup/signUP.dart';
+import '../forgetpassword/forget_pass.dart';
+import '../signup/sign_up.dart';
 
 class Scene extends StatelessWidget {
   const Scene({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class Scene extends StatelessWidget {
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage(
-                      'images/welcome.png',
+                      'images/iimage/welcome.png',
                     ),
                   ),
                 ),

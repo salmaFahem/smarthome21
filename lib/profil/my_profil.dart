@@ -1,9 +1,9 @@
 import 'dart:ui';
-
+import '../group/tab_bar.dart';
 import 'package:flutter/material.dart';
 
-class Sceneeee extends StatelessWidget {
-  const Sceneeee({Key? key}) : super(key: key);
+class Scene4 extends StatelessWidget {
+  const Scene4({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,8 +25,9 @@ class Sceneeee extends StatelessWidget {
               ),
             ),
           ),
-        ),
-      ),
+          child: Tabar(),
+                  ),
+                ),
     );
   }
 }

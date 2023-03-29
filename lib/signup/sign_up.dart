@@ -108,8 +108,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
-                                                                ],
+                                                                autofillHints: const [],
                                                                 decoration:
                                                                 const InputDecoration(
                                                                   labelText: 'Name',
@@ -136,7 +135,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -167,7 +166,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -197,7 +196,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -228,7 +227,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -259,7 +258,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -290,7 +289,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -321,7 +320,7 @@ class Scenee extends StatelessWidget {
                                                                   .only(
                                                                   bottom: 20.0),
                                                               child: TextFormField(
-                                                                autofillHints: [
+                                                                autofillHints: const [
                                                                 ],
                                                                 obscureText:
                                                                 true,
@@ -400,7 +399,7 @@ class Scenee extends StatelessWidget {
                                                           fontSize: 12*ffem,
                                                           fontWeight: FontWeight.w500,
                                                           height: 1.5*ffem/fem,
-                                                          color: Color(0xffffffff),
+                                                          color: const Color(0xffffffff),
                                                         ),
                                                       ),
                                                     ),
@@ -421,8 +420,8 @@ class Scenee extends StatelessWidget {
                                                           padding: EdgeInsets.fromLTRB(20.67*fem, 10.67*fem, 20.67*fem, 10.67*fem),
                                                           height: double.infinity,
                                                           decoration: BoxDecoration (
-                                                            border: Border.all(color: Color(0x19000000)),
-                                                            color: Color(0x28ffffff),
+                                                            border: Border.all(color: const Color(0x19000000)),
+                                                            color: const Color(0x28ffffff),
                                                             borderRadius: BorderRadius.circular(8*fem),
                                                           ),
                                                           child: Center(
@@ -446,8 +445,8 @@ class Scenee extends StatelessWidget {
                                                           padding: EdgeInsets.fromLTRB(20.67*fem, 10.67*fem, 20.67*fem, 10.67*fem),
                                                           height: double.infinity,
                                                           decoration: BoxDecoration (
-                                                            border: Border.all(color: Color(0x19000000)),
-                                                            color: Color(0x28ffffff),
+                                                            border: Border.all(color: const Color(0x19000000)),
+                                                            color: const Color(0x28ffffff),
                                                             borderRadius: BorderRadius.circular(8*fem),
                                                           ),
                                                           child: Center(
@@ -471,8 +470,8 @@ class Scenee extends StatelessWidget {
                                                           padding: EdgeInsets.fromLTRB(20.67*fem, 10.67*fem, 20.67*fem, 10.67*fem),
                                                           height: double.infinity,
                                                           decoration: BoxDecoration (
-                                                            border: Border.all(color: Color(0x19000000)),
-                                                            color: Color(0x28ffffff),
+                                                            border: Border.all(color: const Color(0x19000000)),
+                                                            color: const Color(0x28ffffff),
                                                             borderRadius: BorderRadius.circular(8*fem),
                                                           ),
                                                           child: Center(
