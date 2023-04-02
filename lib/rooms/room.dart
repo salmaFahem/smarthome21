@@ -59,7 +59,7 @@ class Scene6 extends StatelessWidget {
                     left: 15,
                     top: 300 * fem,
                     child: Container(
-                      child: SingleChildScrollView(
+                      child: SingleChildScrollView( // Add SingleChildScrollView here
                         child: Container(
                           width: 350 * fem,
                           height: 450 * fem,
@@ -90,7 +90,6 @@ class Scene6 extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Container(
-                                      // frame3672uF3 (142:342)
                                       margin: EdgeInsets.fromLTRB(
                                           145 * fem, 15 * fem, 161 * fem, 45 * fem),
                                       width: double.infinity,
@@ -100,71 +99,78 @@ class Scene6 extends StatelessWidget {
                                         borderRadius: BorderRadius.circular(40 * fem),
                                       ),
                                     ),
-                                    Container(
-                                    child: SingleChildScrollView(
-                                    child: Container(
-                                      margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 0 * fem, 16 * fem, 21 * fem),
-                                      width: 372 * fem,
-                                      height: 900 * fem,
-                                      child: Stack(
-                                      children: [
-                                      Positioned(
-                                      left: 12 * fem,
-                                      top: 0 * fem,
+                                    SingleChildScrollView( // Add SingleChildScrollView here
                                       child: Container(
-                                      width: 349 * fem,
-                                      height: 350 * fem,
-                                      child: Padding(
-                                      padding: const EdgeInsets.only(
-                                      top: 15.0,
-                                      ),
-                                      child: SingleChildScrollView(
-                                      child: Column(
-                                      crossAxisAlignment:
-                                      CrossAxisAlignment.center,
-                                      children: [
-                                      Padding(
-                                      padding:
-                                      const EdgeInsets.only(
-                                      bottom: 20.0),
-                                      child: Positioned(
-                                        // image7fYy (180:692)
-                                        left:  -4*fem,
-                                        top:  -6.129699707*fem,
-                                        child:
-                                        Align(
-                                          child:
-                                          SizedBox(
-                                            width:  138.37*fem,
-                                            height:  243.13*fem,
-                                            child:
-                                            Container(
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(60 * fem),
-                                                image: DecorationImage(
-                                                  image: AssetImage('images/iimage/bed room.png'),
-                                                  fit: BoxFit.cover,
+                                        margin: EdgeInsets.fromLTRB(
+                                            0 * fem, 0 * fem, 16 * fem, 21 * fem),
+                                        width: 372 * fem,
+                                        height: 300 * fem,
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 12 * fem,
+                                              top: 0 * fem,
+                                              child: Container(
+                                                width: 349 * fem,
+                                                height: 270 * fem,
+                                                child: Padding(
+                                                  padding: const EdgeInsets.only(
+                                                    top: 15.0,
+                                                  ),
+                                                  child: SingleChildScrollView( // Add SingleChildScrollView here
+                                                    child: Column(
+                                                      crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
+                                                      children: [
+                                                        Padding(
+                                                          padding:
+                                                          const EdgeInsets.only(
+                                                              bottom: 20.0),
+                                                          child: Positioned(
+                                                            // image7fYy (180:692)
+                                                            left: -4 * fem,
+                                                            top: -6.129699707 * fem,
+                                                            child: Align(
+                                                              child: SizedBox(
+                                                                width: 118.37 * fem,
+                                                                height: 243.13 * fem,
+                                                                child: Container(
+                                                                  decoration: BoxDecoration(
+                                                                    borderRadius:
+                                                                    BorderRadius.circular(
+                                                                        60 * fem),
+                                                                    image: DecorationImage(
+                                                                      image: AssetImage(
+                                                                          'images/iimage/bed room.png'),
+                                                                      fit: BoxFit.cover,
+                                                                    ),
+                                                                  ),
+                                                                  // other properties
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
-                                              // other properties
-                                            )
-
-                                          ),
+                                            ),
+                                          ],
                                         ),
                                       ),
-                                      ),
-                                        ],
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),
                           ),
-                        ),],
+                        ),
                       ),
                     ),
                   ),
-                    ),
-                ],),),),),),),),),],
+                ],
     ),
     ),),
     );
