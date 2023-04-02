@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smarthome21/group/nav_bar.dart';
 
 
+import 'group/tab_bar.dart';
+import 'home/home.dart';
 import 'login/welcome.dart';
 import 'signup/sign_up.dart';
 import 'package:smarthome21/forgetpassword/forget_pass.dart';
@@ -42,7 +45,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  const Scene4(),
+      home:  const Scene11(),
     );
   }
 }

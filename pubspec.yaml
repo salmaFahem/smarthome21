@@ -76,8 +76,25 @@ flutter:
      - images/iimage/devices.png
      - images/iimage/living room.png
      - images/iimage/notification.png
-     - images/iimage/add device.png
+     - images/iimage/home.png
+     - images/iimage/add divice.png
      - images/icon image/frame right.png
+     - images/icon image/hicon.png
+     - images/icon image/frame left.png
+     - images/icon image/picon.png
+     - images/icon image/microicon.png
+     - images/icon image/avatar.png
+     - images/icon image/nav bar.png
+     - images/icon image/Vector.png
+     - images/icon image/Group 667.png
+     - images/icon image/Group.png
+     - images/icon image/scan1.png
+     - images/icon image/setting1.png
+     - images/icon image/setting2.png
+     - images/icon image/setting3.png
+     - images/icon image/setting4.png
+     - images/icon image/setting5.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
