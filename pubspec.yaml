@@ -94,6 +94,7 @@ flutter:
      - images/icon image/setting3.png
      - images/icon image/setting4.png
      - images/icon image/setting5.png
+     - images/icon image/8room.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

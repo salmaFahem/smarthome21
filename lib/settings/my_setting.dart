@@ -8,12 +8,12 @@ class Scene11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 377;
-    double fem = MediaQuery
-        .of(context)
-        .size
-        .width / baseWidth;
-    double ffem = fem * 0.97;
+    double baseWidth = 377.0; // Define your new base width here
+    double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height / baseWidth; // Calculate scaling factor for height
+    double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
     return Scaffold(
       body: Container(
         width: double.infinity,
@@ -65,8 +65,7 @@ class Scene11 extends StatelessWidget {
                         Positioned(
                           left: 160 * fem,
                           top: 28 * fem,
-                          child: Container(
-// frame3672N3o (155:254)
+                          child: Container(//frame
                             width: 50 * fem,
                             height: 5 * fem,
                             decoration: BoxDecoration(
@@ -79,7 +78,6 @@ class Scene11 extends StatelessWidget {
                           left: 30 * fem,
                           top: 150 * fem,
                           child: Container(
-
                             width: 30.41 * fem,
                             height: 30.23 * fem,
                             decoration: const BoxDecoration(
@@ -93,9 +91,8 @@ class Scene11 extends StatelessWidget {
                         ),
                         Positioned(
                           left: 30 * fem,
-                          top: 230 * fem,
+                          top: 210 * fem,
                           child: Container(
-
                             width: 30.41 * fem,
                             height: 30.23 * fem,
                             decoration: const BoxDecoration(
@@ -106,24 +103,25 @@ class Scene11 extends StatelessWidget {
                               ),
                             ),
                           ),
-                        ),Positioned(
+                        ),
+                        Positioned(
                           left: 30 * fem,
-                          top: 310 * fem,
+                          top: 270 * fem,
                           child: Container(
                             width: 30.41 * fem,
                             height: 30.23 * fem,
                             decoration: const BoxDecoration(
                               image: DecorationImage(
-
                                 image: AssetImage(
                                   'images/icon image/setting3.png',
                                 ),
                               ),
                             ),
                           ),
-                        ),Positioned(
+                        ),
+                        Positioned(
                           left: 30 * fem,
-                          top: 390 * fem,
+                          top: 330 * fem,
                           child: Container(
                             width: 30.41 * fem,
                             height: 30.23 * fem,
@@ -135,9 +133,10 @@ class Scene11 extends StatelessWidget {
                               ),
                             ),
                           ),
-                        ),Positioned(
+                        ),
+                        Positioned(
                           left: 30 * fem,
-                          top: 470 * fem,
+                          top: 390 * fem,
                           child: Container(
                             width: 33.41 * fem,
                             height: 33.23 * fem,
@@ -150,87 +149,197 @@ class Scene11 extends StatelessWidget {
                             ),
                           ),
                         ),
-    Positioned(
-    // autogroup7y8viFo (4Ct5Q18mgnrbJRmzJt7Y8V)
-    left:  48.9980010986*fem,
-    top:  110*fem,
-    child:
-    Container(
-    width:  267.09*fem,
-    height:  36.42*fem,
-    child:
-    Row(
-    crossAxisAlignment:  CrossAxisAlignment.center,
-    children:  [
 
-    Stack(
-    children:  [
-    Positioned(
-    // accountpzy (155:262)
-    left:  0*fem,
-    top:  0*fem,
-    child:
-    Align(
-    child:
-    SizedBox(
-    width:  60*fem,
-    height:  19*fem,
-    child:
-    Text(
-    'Account',
-    style: GoogleFonts.roboto(
-    fontSize:  16*ffem,
-    fontWeight:  FontWeight.w500,
-    height:  1.1725*ffem/fem,
-    color:  Color(0xff000000),
-    ),
-    ),
-    ),
-    ),
-    ),
-    Positioned(
-    // privacysecutritychangeemailorn (155:263)
-    left:  0*fem,
-    top:  17.4189453125*fem,
-    child:
-    Align(
-    child:
-    SizedBox(
-    width:  224*fem,
-    height:  19*fem,
-    child:
-    Text(
-    'Privacy, secutrity, change email or number',
-    style:  GoogleFonts.roboto(
-    fontSize:  12*ffem,
-    fontWeight:  FontWeight.w400,
-    height:  1.536875089*ffem/fem,
-    color:  Color(0xff000000),
-    ),
-    ),
-    ),
-    ),
-    ),
-    ],
-    ),
-      ],
-    ),
-                  ),
-                ),
-    ],
-
-                    ),
-                  ),
-                ),
-              ),
-                  ],
+                        Positioned(
+                          // accountpzy (155:262)
+                          left: 90 * fem,
+                          top: 150 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 60 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Account',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.1725 * ffem / fem,
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // privacysecutritychangeemailorn (155:263)
+                          left: 90 * fem,
+                          top: 166.4189453125 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 224 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Privacy, secutrity, change email or number',
+                                 style: GoogleFonts.roboto(
+                                   fontSize: 12 * ffem,
+                                   fontWeight: FontWeight.w400,
+                                   height: 1.536875089 * ffem / fem,
+                                   color: Color(0x80ffffff),
+                                 ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // accountpzy (155:262)
+                          left: 90 * fem,
+                          top: 210 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 100 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Notification',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.1725 * ffem / fem,
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // privacysecutritychangeemailorn (155:263)
+                          left: 90 * fem,
+                          top: 226.4189453125 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 224 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Message, group & call ',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 12 * ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.536875089 * ffem / fem,
+                                  color: Color(0x80ffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // accountpzy (155:262)
+                          left: 90 * fem,
+                          top: 270 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 100 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Language',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.1725 * ffem / fem,
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // privacysecutritychangeemailorn (155:263)
+                          left: 90 * fem,
+                          top: 286.4189453125 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 224 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'English  >',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 12 * ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.536875089 * ffem / fem,
+                                  color: Color(0x80ffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // accountpzy (155:262)
+                          left: 90 * fem,
+                          top: 330 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 100 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Wi-Fi',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.1725 * ffem / fem,
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // privacysecutritychangeemailorn (155:263)
+                          left: 90 * fem,
+                          top: 346.4189453125 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 224 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Not connected  >',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 12 * ffem,
+                                  fontWeight: FontWeight.w400,
+                                  height: 1.536875089 * ffem / fem,
+                                  color: Color(0x80ffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          // accountpzy (155:262)
+                          left: 90 * fem,
+                          top: 400 * fem,
+                          child: Align(
+                            child: SizedBox(
+                              width: 100 * fem,
+                              height: 19 * fem,
+                              child: Text(
+                                'Sound',
+                                style: GoogleFonts.roboto(
+                                  fontSize: 16 * ffem,
+                                  fontWeight: FontWeight.w500,
+                                  height: 1.1725 * ffem / fem,
+                                  color: Color(0xffffffff),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                                ],
+                            ),
+                          ),
+                        ),
               ),
               Positioned(
                 left: 107 * fem,
                 top: 50 * fem,
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(
-                      0 * fem, 0 * fem, 87 * fem, 0 * fem),
+                  margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 87 * fem, 0 * fem),
                   child: Text(
                     'Settings',
                     style: GoogleFonts.manrope(
@@ -243,8 +352,10 @@ class Scene11 extends StatelessWidget {
                 ),
               ),
               const Tabar(),
-    ),
+                      ],
+                    ),
+                  ),
                 ),
-
-    );
-  }}
+          );
+  }
+}
