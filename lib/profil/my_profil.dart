@@ -29,14 +29,13 @@ class Scene4 extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              const Tabar(),
               Positioned(
                 // iphone142zU5 (166:334)
                 left: 0 * fem,
                 top: 292 * fem,
                 child: Container(
                   width: 379 * fem,
-                  height: 258 * fem,
+                  height: 358 * fem,
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
                       begin: Alignment(0, -1),
@@ -352,6 +351,7 @@ class Scene4 extends StatelessWidget {
                   ],
                 ),
               ),
+              const Tabar(),
             ],
           ),
         ),

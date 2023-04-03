@@ -8,18 +8,15 @@ class Tabar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 377.0; // Define your new base width here
-    double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
-    double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
-    double scaleFactorHeight = MediaQuery.of(context).size.height / baseWidth; // Calculate scaling factor for height
-    double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
-
+    double baseWidth = 377;
+    double fem = MediaQuery.of(context).size.width / baseWidth;
+    double ffem = fem * 0.97;
     return Stack(
       children: [
         Positioned(
           // frame right (94:337)
           left: 0 * fem,
-          top: 710 * fem,
+          top: 550 * fem,
           child: Stack(
             children: [
               Image.asset(
@@ -53,7 +50,7 @@ class Tabar extends StatelessWidget {
             Positioned(
               // frame right (94:337)
               right: 0 * fem,
-              top: 710 * fem,
+              top: 550 * fem,
               child: Stack(
                 children: [
                   Image.asset(
@@ -87,7 +84,7 @@ class Tabar extends StatelessWidget {
         Positioned(
           // iconsiribjj (22:133)
           left: 146 * fem,
-          top: 710 * fem,
+          top: 537 * fem,
           child: Container(
             width: 80 * fem,
             height: 80 * fem,
