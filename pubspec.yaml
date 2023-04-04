@@ -95,6 +95,16 @@ flutter:
      - images/icon image/setting4.png
      - images/icon image/setting5.png
      - images/icon image/8room.png
+     - images/icon image/thaw.png
+     - images/icon image/cool.png
+     - images/icon image/cil_sofa1.png
+     - images/icon image/cil_bathroom1.png
+     - images/icon image/cli_bedroom1.png
+     - images/icon image/add room1.png
+     - images/icon image/add room2.png
+     - images/icon image/G add room.png
+     - images/icon image/icon gallery.png
+     - images/icon image/icon camera.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

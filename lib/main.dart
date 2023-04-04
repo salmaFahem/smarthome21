@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:  const Scene4(),
+      home:  const Scene6(),
     );
   }
 }

@@ -36,13 +36,12 @@ class Scene6 extends StatelessWidget {
           ),
           child: Stack(
             children: [
-
               Positioned(
                 left: 135 * fem,
                 top: 70 * fem,
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(
-                      0 * fem, 0 * fem, 87 * fem, 0 * fem),
+                  margin:
+                  EdgeInsets.fromLTRB(0 * fem, 0 * fem, 87 * fem, 0 * fem),
                   child: Text(
                     'Rooms',
                     style: GoogleFonts.manrope(
@@ -56,297 +55,673 @@ class Scene6 extends StatelessWidget {
               ),
               Stack(
                 children: [
-
                   Positioned(
                     left: 0,
                     top: 200 * fem,
                     child: SingleChildScrollView(
                       child: Container(
-
                         width: 380 * fem,
                         height: 440 * fem,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(60 * fem),
-                          gradient: const LinearGradient(
-                            begin: Alignment(0, -1),
-                            end: Alignment(0, 1),
-                            colors: <Color>[
-                              Color(0xff303333),
-                              Color(0xe06e9292),
-                              Color(0x00303333)
-                            ],
-                            stops: <double>[0, 0.646, 1],
+                          gradient:  const LinearGradient (
+                            begin:  Alignment(0, -1),
+                            end:  Alignment(0, 1),
+                            colors:  <Color>[Color(0xe5323534), Color(0xe569614c)],
+                            stops:  <double>[0.38, 0.953],
                           ),
                         ),
-
-
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-
-
-
-                                  Container(
-                                    margin: EdgeInsets.fromLTRB(
-                                        165 * fem, 15 * fem, 161 * fem, 45 * fem),
-
-                                    width: double.infinity,
-                                    height: 4 * fem,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffffffff),
-                                      borderRadius: BorderRadius.circular(40 * fem),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    height: 220 * fem,
-
-                                    child: SingleChildScrollView( // Add SingleChildScrollView here
-                                      child: Container(
-                                        margin: EdgeInsets.fromLTRB(
-                                            0 * fem, 0 * fem, 0 * fem, 0 * fem),
-                                        width: 382 ,
-                                        height: 380,
-                                        child: Stack(
-                                          children: [
-
-                                            Positioned(
-                                              left: -80 * fem,
-                                              top: -10 * fem,
-                                              child: Container(
-                                                width: 349 * fem,
-                                                height: 270 * fem,
-                                                child: Padding(
-                                                  padding: const EdgeInsets.only(
-                                                    top: 12.0,
-                                                  ),
-                                                  child: SingleChildScrollView( // Add SingleChildScrollView here
-                                                    child: Column(
-                                                      crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                      children: [
-                                                    Padding(
-                                                    padding:
-                                                    const EdgeInsets.only(
-                                                        bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 0 ,
-                                                            top: -6.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/bed room.png'),
-                                                                      fit: BoxFit.cover,
-                                                                    ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: EdgeInsets.fromLTRB(
+                                  155 * fem, 15 * fem, 161 * fem, 45 * fem),
+                              width: double.infinity,
+                              height: 4 * fem,
+                              decoration: BoxDecoration(
+                                color: const Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(40 * fem),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 220 * fem,
+                              width: 380 * fem,
+                              child: SingleChildScrollView(
+                                // Add SingleChildScrollView here
+                                child: Container(
+                                  margin: EdgeInsets.fromLTRB(
+                                      40 * fem, 0 * fem, 0 * fem, 0 * fem),
+                                  width: 382,
+                                  height: 380,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 0 * fem,
+                                        top: -10 * fem,
+                                        child: Container(
+                                          width: 349 * fem,
+                                          height: 270 * fem,
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(
+                                              top: 12.0,
+                                              right: 50.0,
+                                            ),
+                                            child: SingleChildScrollView(
+                                              // Add SingleChildScrollView here
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                                children: [
+                                                  Row(
+                                                    crossAxisAlignment:
+                                                    CrossAxisAlignment
+                                                        .center,
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                        const EdgeInsets
+                                                            .only(
+                                                            bottom: 40.0,
+                                                            right: 30.0,
+                                                            left: 30.0),
+                                                        child: Positioned(
+                                                          // image7fYy (180:692)
+                                                          left: 0,
+                                                          top: -6.129699707 *
+                                                              fem,
+                                                          child: Align(
+                                                            child: SizedBox(
+                                                              width:
+                                                              110.37 * fem,
+                                                              height:
+                                                              180.13 * fem,
+                                                              child: Container(
+                                                                decoration:
+                                                                BoxDecoration(
+                                                                  borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(30 *
+                                                                      fem),
+                                                                  image:
+                                                                  const DecorationImage(
+                                                                    image: AssetImage(
+                                                                        'images/iimage/bed room.png'),
+                                                                    fit: BoxFit
+                                                                        .cover,
                                                                   ),
-                                                                  // other properties
                                                                 ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                    ),
-                                                  Padding(
-                                                    padding:
-                                                    const EdgeInsets.only(
-                                                        bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 10 ,
-                                                            top: 100.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/bathroom.png'),
-                                                                      fit: BoxFit.cover,
+                                                                child: Stack(
+                                                                  children: [
+                                                                    Positioned(
+                                                                      // rectangle240r29 (107:442)
+                                                                      left:  0*fem,
+                                                                      top:  80*fem,
+                                                                      child:
+                                                                      Align(
+                                                                        child:
+                                                                        SizedBox(
+                                                                          width:
+                                                                          110.37 * fem,
+                                                                          height:
+                                                                          100.13 * fem,
+                                                                          child:
+                                                                          Container(
+                                                                            decoration:  BoxDecoration (
+                                                                              borderRadius:  BorderRadius
+                                                                                  .circular(30 *
+                                                                                  fem),
+                                                                              gradient:  const LinearGradient (
+                                                                                begin:  Alignment(0, -1),
+                                                                                end:  Alignment(0, 1),
+                                                                                colors:  <Color>[Color(0x00373737), Color(0xad202020), Color(0xbc000000)],
+                                                                                stops:  <double>[0, 0.421, 1],
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
                                                                     ),
-                                                                  ),
-                                                                  // other properties
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-
-                                                  ),
-                                                        Padding(
-                                                          padding:
-                                                          const EdgeInsets.only(
-                                                              bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 0 ,
-                                                            top: -6.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/living room.png'),
-                                                                      fit: BoxFit.cover,
+                                                                    Positioned(
+                                                                      // image7fYy (180:692)
+                                                                      left: 24,
+                                                                      top: 120.129699707 *
+                                                                          fem,
+                                                                      child: Align(
+                                                                        child: SizedBox(
+                                                                          width:
+                                                                          100.37 * fem,
+                                                                          height:
+                                                                          50.13 * fem,
+                                                                          child: Container(
+                                                                            child: Text('Bathroom',
+                                                                              style: GoogleFonts.inter(
+                                                                                color: const Color(0xffffffff),
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
                                                                     ),
-                                                                  ),
-                                                                  // other properties
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ),Padding(
-                                                          padding:
-                                                          const EdgeInsets.only(
-                                                              bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 0 ,
-                                                            top: -6.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/bed room.png'),
-                                                                      fit: BoxFit.cover,
+                                                                    Positioned(
+                                                                      // image7fYy (180:692)
+                                                                      left: 44,
+                                                                      top: 140.129699707 *
+                                                                          fem,
+                                                                      child: Align(
+                                                                        child: SizedBox(
+                                                                          width:
+                                                                          30.37 * fem,
+                                                                          height:
+                                                                          30.13 * fem,
+                                                                          child: Container(
+                                                                            decoration: const BoxDecoration(
+                                                                              image: DecorationImage(
+                                                                                fit: BoxFit.cover,
+                                                                                image: AssetImage(
+                                                                                    'images/icon image/cli_bedroom1.png'),
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
                                                                     ),
-                                                                  ),
-                                                                  // other properties
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ),Padding(
-                                                          padding:
-                                                          const EdgeInsets.only(
-                                                              bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 0 ,
-                                                            top: -6.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/living room.png'),
-                                                                      fit: BoxFit.cover,
-                                                                    ),
-                                                                  ),
-                                                                  // other properties
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ),Padding(
-                                                          padding:
-                                                          const EdgeInsets.only(
-                                                              bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 0 ,
-                                                            top: -6.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/bathroom.png'),
-                                                                      fit: BoxFit.cover,
-                                                                    ),
-                                                                  ),
-                                                                  // other properties
-                                                                ),
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ),Padding(
-                                                          padding:
-                                                          const EdgeInsets.only(
-                                                              bottom: 40.0),
-                                                          child: Positioned(
-                                                            // image7fYy (180:692)
-                                                            left: 0 ,
-                                                            top: -6.129699707 * fem,
-                                                            child: Align(
-                                                              child: SizedBox(
-                                                                width: 118.37 * fem,
-                                                                height: 200.13 * fem,
-                                                                child: Container(
-                                                                  decoration: BoxDecoration(
-                                                                    borderRadius:
-                                                                    BorderRadius.circular(
-                                                                        30 * fem),
-                                                                    image: const DecorationImage(
-                                                                      image: AssetImage(
-                                                                          'images/iimage/bed room.png'),
-                                                                      fit: BoxFit.cover,
-                                                                    ),
-                                                                  ),
-                                                                  // other properties
+                                                                  ],
                                                                 ),
                                                               ),
                                                             ),
                                                           ),
                                                         ),
-                                                      ],
-                                                    ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                        const EdgeInsets
+                                                            .only(
+                                                            bottom: 40.0),
+                                                        child: Positioned(
+                                                          // image7fYy (180:692)
+                                                          left: 10,
+                                                          top: 100.129699707 *
+                                                              fem,
+                                                          child: Align(
+                                                            child: SizedBox(
+                                                              width:
+                                                              110.37 * fem,
+                                                              height:
+                                                              180.13 * fem,
+                                                              child: Container(
+                                                                decoration:
+                                                                BoxDecoration(
+                                                                  borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(30 *
+                                                                      fem),
+                                                                  image:
+                                                                  const DecorationImage(
+                                                                    image: AssetImage(
+                                                                        'images/iimage/bathroom.png'),
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                                child: Stack(
+                                                                  children: [
+                                                                    Positioned(
+                                                                      // rectangle240r29 (107:442)
+                                                                      left:  0*fem,
+                                                                      top:  80*fem,
+                                                                      child:
+                                                                      Align(
+                                                                        child:
+                                                                        SizedBox(
+                                                                          width:
+                                                                          110.37 * fem,
+                                                                          height:
+                                                                          100.13 * fem,
+                                                                          child:
+                                                                          Container(
+                                                                            decoration:  BoxDecoration (
+                                                                              borderRadius:  BorderRadius
+                                                                                  .circular(30 *
+                                                                                  fem),
+                                                                              gradient:  const LinearGradient (
+                                                                                begin:  Alignment(0, -1),
+                                                                                end:  Alignment(0, 1),
+                                                                                colors:  <Color>[Color(0x00373737), Color(0xad202020), Color(0xbc000000)],
+                                                                                stops:  <double>[0, 0.421, 1],
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Positioned(
+                                                                      // image7fYy (180:692)
+                                                                      left: 24,
+                                                                      top: 120.129699707 *
+                                                                          fem,
+                                                                      child: Align(
+                                                                        child: SizedBox(
+                                                                          width:
+                                                                          100.37 * fem,
+                                                                          height:
+                                                                          50.13 * fem,
+                                                                          child: Container(
+                                                                            child: Text('Bathroom',
+                                                                              style: GoogleFonts.inter(
+                                                                                color: const Color(0xffffffff),
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                    Positioned(
+                                                                      // image7fYy (180:692)
+                                                                      left: 44,
+                                                                      top: 140.129699707 *
+                                                                          fem,
+                                                                      child: Align(
+                                                                        child: SizedBox(
+                                                                          width:
+                                                                          30.37 * fem,
+                                                                          height:
+                                                                          30.13 * fem,
+                                                                          child: Container(
+                                                                            decoration: const BoxDecoration(
+                                                                              image: DecorationImage(
+                                                                                fit: BoxFit.cover,
+                                                                                image: AssetImage(
+                                                                                    'images/icon image/cil_bathroom1.png'),
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
                                                   ),
-                                                ),
+                                                  Row(
+                                                    crossAxisAlignment:
+                                                    CrossAxisAlignment
+                                                        .center,
+                                                    children: [
+                                                      Padding(
+                                                        padding:
+                                                        const EdgeInsets
+                                                            .only(
+                                                            bottom: 40.0,
+                                                            right: 30.0,
+                                                            left: 30.0),
+                                                        child:
+                                                        Positioned(
+                                                          // image7fYy (180:692)
+                                                          left: 0,
+                                                          top: -6.129699707 *
+                                                              fem,
+                                                          child: Align(
+                                                            child: SizedBox(
+                                                              width:
+                                                              110.37 * fem,
+                                                              height:
+                                                              180.13 * fem,
+                                                              child: Container(
+                                                                decoration:
+                                                                BoxDecoration(
+                                                                  borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(30 *
+                                                                      fem),
+                                                                  image:
+                                                                  const DecorationImage(
+                                                                    image: AssetImage(
+                                                                        'images/iimage/living room.png'),
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                                child: Stack(
+                                                                  children: [
+                                                                    Positioned(
+                                                                      // rectangle240r29 (107:442)
+                                                                      left:  0*fem,
+                                                                      top:  80*fem,
+                                                                      child:
+                                                                      Align(
+                                                                        child:
+                                                                        SizedBox(
+                                                                        width:
+                                                                        110.37 * fem,
+                                                                        height:
+                                                                        100.13 * fem,
+                                                                          child:
+                                                                          Container(
+                                                                            decoration:  BoxDecoration (
+                                                                              borderRadius:  BorderRadius
+                                                                                  .circular(30 *
+                                                                                  fem),
+                                                                              gradient:  const LinearGradient (
+                                                                                begin:  Alignment(0, -1),
+                                                                                end:  Alignment(0, 1),
+                                                                                colors:  <Color>[Color(0x00373737), Color(0xad202020), Color(0xbc000000)],
+                                                                                stops:  <double>[0, 0.421, 1],
+                                                                              ),
+                                                                            ),
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                Positioned(
+                                                                  // image7fYy (180:692)
+                                                                  left: 24,
+                                                                  top: 120.129699707 *
+                                                                      fem,
+                                                                  child: Align(
+                                                                    child: SizedBox(
+                                                                      width:
+                                                                      100.37 * fem,
+                                                                      height:
+                                                                      50.13 * fem,
+                                                                      child: Container(
+                                                                        child: Text('Living room',
+                                                                          style: GoogleFonts.inter(
+                                                                            color: const Color(0xffffffff),
+                                                                          ),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                                Positioned(
+                                                                  // image7fYy (180:692)
+                                                                  left: 44,
+                                                                  top: 140.129699707 *
+                                                                      fem,
+                                                                  child: Align(
+                                                                    child: SizedBox(
+                                                                      width:
+                                                                      30.37 * fem,
+                                                                      height:
+                                                                      30.13 * fem,
+                                                                      child: Container(
+                                                                        decoration: const BoxDecoration(
+                                                                        image: DecorationImage(
+                                                                        fit: BoxFit.cover,
+                                                                        image: AssetImage(
+                                                                          'images/icon image/cil_sofa1.png'),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                                ),
+                                                                        ],
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      Padding(
+                                                        padding:
+                                                        const EdgeInsets
+                                                            .only(
+                                                            bottom: 40.0),
+                                                        child: Positioned(
+                                                          // image7fYy (180:692)
+                                                          left: 10,
+                                                          top: 100.129699707 *
+                                                              fem,
+                                                          child: Align(
+                                                            child: SizedBox(
+                                                              width:
+                                                              110.37 * fem,
+                                                              height:
+                                                              180.13 * fem,
+                                                              child: Stack(
+                                                                children:[
+                                                                Container(
+                                                                  decoration:  BoxDecoration (
+                                                                      border:  Border.all(color: const Color(0xe5ffffff)),
+                                                                  borderRadius:  BorderRadius.circular(30*fem),
+                                                                  color:  const Color(0xffffffff),
+                                                                  gradient:  const LinearGradient (
+                                                                    begin:  Alignment(0, -1),
+                                                                    end:  Alignment(0, 1),
+                                                                    colors:  <Color>[Color(0xe5323534), Color(0xe569614c)],
+                                                                    stops:  <double>[0.38, 0.953],
+                                                                  ),
+                                                                ),
+                                                            ),
+                                                                  Container(
+                                                                    width: double.infinity, // set width to match parent
+                                                                    height: double.infinity, // set height to match parent
+                                                                    child: Stack(
+                                                                      alignment: Alignment.topRight,
+                                                                      children: [
+
+                                                                      Positioned(
+                                                                      top: 150.0,
+                                                                      right: 25.0,
+                                                                      child: Text('add room...',
+                                                                        style: GoogleFonts.inter(
+                                                                          fontSize: 12 * ffem,
+                                                                          color: const Color(0xffffffff),
+                                                                        ),
+                                                                      ),
+                                                                      ),
+
+
+                                                                        Positioned(
+                                                                          top: 60.0,
+                                                                          right: 35.0,
+                                                                          child: FloatingActionButton(
+                                                                            onPressed: () {
+                                                                              showModalBottomSheet(
+                                                                                context: context,
+                                                                                shape: RoundedRectangleBorder(
+                                                                                  borderRadius: BorderRadius.vertical(top: Radius.circular(60)),
+                                                                                ),
+
+                                                                                builder: (context) => Stack(
+                                                                                  children: [
+                                                                                    Container(
+                                                                                      decoration:  BoxDecoration (
+
+                                                                                        borderRadius:  BorderRadius.only(topRight: Radius.circular(60.0),topLeft: Radius.circular(60.0)),
+                                                                                        color:  const Color(0xffffffff),
+                                                                                        gradient:  const LinearGradient (
+                                                                                          begin:  Alignment(0, -1),
+                                                                                          end:  Alignment(0, 1),
+                                                                                          colors:  <Color>[Color(0xe5323534), Color(0xe569614c)],
+                                                                                          stops:  <double>[0.38, 0.953],
+                                                                                        ),
+                                                                                      ),
+                                                                                    ),
+
+                                                                                      Positioned(
+                                                                                        top: -240*fem,
+                                                                                        left: 20*fem,
+                                                                                        child:
+                                                                                      Container(
+                                                                                      // addroomV7Z (166:349)
+                                                                                      margin:  EdgeInsets.fromLTRB(0*fem, 3.17*fem, 28*fem, 0*fem),
+                                                                                      child:
+                                                                                      Text(
+                                                                                      'Add room: ',
+                                                                                      style: GoogleFonts.inter(
+                                                                                      fontSize:  40*ffem,
+                                                                                      fontWeight: FontWeight.w400,
+                                                                                      height:  9.56*ffem/fem,
+                                                                                      color:  Color(0xffd7914d),
+                                                                                      ),
+                                                                                      ),
+                                                                                      ),
+                                                                                      ),
+
+                                                                              Positioned(
+                                                                              left: 12 * fem,
+                                                                              top: 60 * fem,
+                                                                              child: Container(
+                                                                              width: 349 * fem,
+                                                                              height: 350 * fem,
+                                                                                    child: Padding(
+                                                                                      padding: const EdgeInsets
+                                                                                          .only(
+                                                                                          bottom:
+                                                                                          20.0),
+                                                                                      child:
+                                                                                      TextFormField(
+                                                                                        autofillHints: [],
+                                                                                        decoration:
+                                                                                        const InputDecoration(
+                                                                                          labelText:
+                                                                                          'Give a name to your room',
+                                                                                          labelStyle: TextStyle(
+                                                                                              color:
+                                                                                              Colors.grey,
+                                                                                              fontSize: 25),
+                                                                                          enabledBorder:
+                                                                                          UnderlineInputBorder(
+                                                                                            borderSide: BorderSide(
+                                                                                                color: Color(0xFFD8914D),
+                                                                                                width: 3.0),
+                                                                                          ),
+                                                                                        ),
+                                                                                        style: const TextStyle(
+                                                                                            color:
+                                                                                            Colors.white), // set the text color to white
+                                                                                      ),
+                                                                                    ),
+                                                                              ),),
+
+                                                                              Positioned(
+                                                                              top: 140*fem,
+                                                                              left: 20*fem,
+                                                                              child:
+                                                                                    Container(
+                                                                                      // choseaphotototheroomukw (176:353)
+                                                                                      margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 88*fem, 35.5*fem),
+                                                                                      constraints:  BoxConstraints (
+                                                                                        maxWidth:  243*fem,
+                                                                                      ),
+                                                                                      child:
+                                                                                      Text(
+                                                                                        'chose a photo to the room:',
+                                                                                        style: GoogleFonts.inter(
+                                                                                          fontSize:  21*ffem,
+                                                                                          fontWeight:  FontWeight.w400,
+                                                                                          height:  0.9333333333*ffem/fem,
+                                                                                          color:  Color(0xffffffff),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ),
+                                                                              ),
+
+
+                                                                              Positioned(
+                                                                              left: -50 * fem,
+                                                                              top: 50 * fem,
+                                                                              child: Container(
+                                                                              width: 349 * fem,
+                                                                              height: 350 * fem,
+                                                                                      // autogroupyovxBCf (4Ctq5AXZ6oUq6Rb5p1yoVX)
+                                                                                      margin:  EdgeInsets.fromLTRB(82*fem, 0*fem, 85*fem, 83*fem),
+
+                                                                                      child:
+                                                                                      Row(
+                                                                                        crossAxisAlignment:  CrossAxisAlignment.center,
+                                                                                        children:  [
+                                                                                        Positioned(
+                                                                                        left: 0 * fem,
+                                                                                        top: 170 * fem,
+                                                                                          child: Container(
+                                                                                            // group34423gfD (197:262)
+                                                                                            margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 35*fem, 0*fem),
+                                                                                            width:  58*fem,
+                                                                                            height:  51*fem,
+                                                                                            child: Image.asset('images/icon image/icon gallery.png',
+                                                                                              width:  58*fem,
+                                                                                              height:  51*fem,
+
+                                                                                            ),
+                                                                                          ),
+                                                                                        ),
+
+                                                                                          Positioned(
+                                                                                            left: 20 * fem,
+                                                                                            top: 170 * fem,
+                                                                                            child: Container(
+                                                                                            // group34423gfD (197:262)
+                                                                                            margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 82*fem, 0*fem),
+                                                                                            width:  58*fem,
+                                                                                            height:  51*fem,
+                                                                                            child: Image.asset('images/icon image/icon camera.png',
+                                                                                              width:  58*fem,
+                                                                                              height:  51*fem,
+
+                                                                                            ),
+                                                                                          ),
+                                                                                          ),
+
+                                                                                        ],
+                                                                                      ),
+                                                                                    ),
+                                                                              ),
+
+                                                                                  ],
+                                                                                ),
+                                                                              ); // <-- Add the missing closing parenthesis here
+                                                                            },
+                                                                            backgroundColor: Colors.orangeAccent,
+                                                                            child: const Icon(Icons.add),
+                                                                          ),
+                                                                        ),
+
+                                                                      ],
+                                                                    ),
+                                                                  )
+
+
+                                                                ]
+                                                              )
+                                                          ),
+                                                        ),
+                                                      ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
                                               ),
                                             ),
-                                          ],
+                                          ),
                                         ),
                                       ),
-                                    ),
+                                    ],
                                   ),
-                                ],
+                                ),
                               ),
                             ),
-                          ),
+                          ],
+                        ),
                       ),
-
+                    ),
+                  ),
                   const Tabar(),
                 ],
               )
-            ],),
+            ],
+          ),
         ),
       ),
+
     );
   }
 }
