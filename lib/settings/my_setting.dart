@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smarthome21/notification/notification.dart';
 
 import '../group/tab_bar.dart';
 
@@ -190,26 +191,35 @@ class Scene11 extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Positioned(
-                          // accountpzy (155:262)
-                          left: 90 * fem,
-                          top: 210 * fem,
-                          child: Align(
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Container(
+                            margin: EdgeInsets.only(left: 90 * fem, top: 210 * fem),
                             child: SizedBox(
                               width: 100 * fem,
                               height: 19 * fem,
-                              child: Text(
-                                'Notification',
-                                style: GoogleFonts.roboto(
-                                  fontSize: 16 * ffem,
-                                  fontWeight: FontWeight.w500,
-                                  height: 1.1725 * ffem / fem,
-                                  color: Color(0xffffffff),
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => const Notif()),
+                                  );
+                                },
+                                splashColor: Colors.red,
+                                child: Text(
+                                  'Notification',
+                                  style: GoogleFonts.roboto(
+                                    fontSize: 16 * ffem,
+                                    fontWeight: FontWeight.w500,
+                                    height: 1.1725 * ffem / fem,
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                         ),
+
                         Positioned(
                           // privacysecutritychangeemailorn (155:263)
                           left: 90 * fem,
@@ -359,3 +369,5 @@ class Scene11 extends StatelessWidget {
           );
   }
 }
+
+
