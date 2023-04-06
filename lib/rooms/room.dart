@@ -38,7 +38,7 @@ class Scene6 extends StatelessWidget {
             children: [
               Positioned(
                 left: 135 * fem,
-                top: 70 * fem,
+                top: 50 * fem,
                 child: Container(
                   margin:
                   EdgeInsets.fromLTRB(0 * fem, 0 * fem, 87 * fem, 0 * fem),
@@ -53,11 +53,87 @@ class Scene6 extends StatelessWidget {
                   ),
                 ),
               ),
+              Container(
+                // autogroupdjxxVRd (4CtmzRL483DspT1vgMDJXX)
+                width:  1045*fem,
+                height:  666*fem,
+                child:
+                Stack(
+                  children:  [
+                  Positioned(
+                  // frame3658BJT (107:373)
+                  left:  40*fem,
+                  top:  121*fem,
+                  child:
+                  Container(
+                    width:  286*fem,
+                    height:  63*fem,
+                    decoration:  BoxDecoration (
+                        border:  Border.all(color: Color(0xffffffff)),
+                      gradient:  const LinearGradient (
+                        begin:  Alignment(0, -1),
+                        end:  Alignment(0, 1),
+                        colors:  <Color>[Color(0xe5323534), Color(0xe569614c)],
+                        stops:  <double>[0.38, 0.953],
+                      ),
+                    borderRadius:  BorderRadius.circular(30*fem),
+                  ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 80*fem,
+                          top: 20*fem,
+                          child: Container(
+                          // roomsZrj (107:393)
+                          margin:  EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 0*fem),
+                          child:
+                          Text(
+                            'Rooms',
+                            style: GoogleFonts.inter(
+                              fontSize:  16*ffem,
+                              fontWeight:  FontWeight.w700,
+                              height:  1.2125*ffem/fem,
+                              color:  Color(0xffffffff),
+                            ),
+                          ),
+                        ),
+                        ),
+                    Stack(
+                      children: [
+                    Positioned(
+                      left: 18*fem,
+                      top: 8*fem,
+                      child: Image.asset('images/icon image/8room.png')
+                    ),
+                    Positioned(
+                    left: 36*fem,
+                      top: 20*fem,
+                      child: Container(
+                        // roomsZrj (107:393)
+                        margin:  EdgeInsets.fromLTRB(0*fem, 1*fem, 0*fem, 0*fem),
+                        child:
+                        Text(
+                          '3',
+                          style: GoogleFonts.inter(
+                            fontSize:  16*ffem,
+                            fontWeight:  FontWeight.w700,
+                            height:  1.2125*ffem/fem,
+                            color:  Color(0xffffffff),
+                          ),
+                        ),
+                      ),
+                    ),
+                    ],
+                    ),
+                      ],
+                    ),
+                ),
+              ),
               Stack(
                 children: [
                   Positioned(
                     left: 0,
-                    top: 200 * fem,
+                    top: 210 * fem,
                     child: SingleChildScrollView(
                       child: Container(
                         width: 380 * fem,
@@ -518,7 +594,6 @@ class Scene6 extends StatelessWidget {
                                                                       ),
                                                                       ),
 
-
                                                                         Positioned(
                                                                           top: 60.0,
                                                                           right: 35.0,
@@ -526,18 +601,18 @@ class Scene6 extends StatelessWidget {
                                                                             onPressed: () {
                                                                               showModalBottomSheet(
                                                                                 context: context,
-                                                                                shape: RoundedRectangleBorder(
+                                                                                shape: const RoundedRectangleBorder(
                                                                                   borderRadius: BorderRadius.vertical(top: Radius.circular(60)),
                                                                                 ),
 
                                                                                 builder: (context) => Stack(
                                                                                   children: [
                                                                                     Container(
-                                                                                      decoration:  BoxDecoration (
+                                                                                      decoration:  const BoxDecoration (
 
                                                                                         borderRadius:  BorderRadius.only(topRight: Radius.circular(60.0),topLeft: Radius.circular(60.0)),
-                                                                                        color:  const Color(0xffffffff),
-                                                                                        gradient:  const LinearGradient (
+                                                                                        color:  Color(0xffffffff),
+                                                                                        gradient:  LinearGradient (
                                                                                           begin:  Alignment(0, -1),
                                                                                           end:  Alignment(0, 1),
                                                                                           colors:  <Color>[Color(0xe5323534), Color(0xe569614c)],
@@ -547,7 +622,7 @@ class Scene6 extends StatelessWidget {
                                                                                     ),
 
                                                                                       Positioned(
-                                                                                        top: -240*fem,
+                                                                                        top: -230*fem,
                                                                                         left: 20*fem,
                                                                                         child:
                                                                                       Container(
@@ -560,7 +635,7 @@ class Scene6 extends StatelessWidget {
                                                                                       fontSize:  40*ffem,
                                                                                       fontWeight: FontWeight.w400,
                                                                                       height:  9.56*ffem/fem,
-                                                                                      color:  Color(0xffd7914d),
+                                                                                      color:  const Color(0xffd7914d),
                                                                                       ),
                                                                                       ),
                                                                                       ),
@@ -568,7 +643,7 @@ class Scene6 extends StatelessWidget {
 
                                                                               Positioned(
                                                                               left: 12 * fem,
-                                                                              top: 60 * fem,
+                                                                              top: 70 * fem,
                                                                               child: Container(
                                                                               width: 349 * fem,
                                                                               height: 350 * fem,
@@ -603,7 +678,7 @@ class Scene6 extends StatelessWidget {
                                                                               ),),
 
                                                                               Positioned(
-                                                                              top: 140*fem,
+                                                                              top: 170*fem,
                                                                               left: 20*fem,
                                                                               child:
                                                                                     Container(
@@ -619,7 +694,7 @@ class Scene6 extends StatelessWidget {
                                                                                           fontSize:  21*ffem,
                                                                                           fontWeight:  FontWeight.w400,
                                                                                           height:  0.9333333333*ffem/fem,
-                                                                                          color:  Color(0xffffffff),
+                                                                                          color:  const Color(0xffffffff),
                                                                                         ),
                                                                                       ),
                                                                                     ),
@@ -628,7 +703,7 @@ class Scene6 extends StatelessWidget {
 
                                                                               Positioned(
                                                                               left: -50 * fem,
-                                                                              top: 50 * fem,
+                                                                              top: 70 * fem,
                                                                               child: Container(
                                                                               width: 349 * fem,
                                                                               height: 350 * fem,
@@ -644,7 +719,7 @@ class Scene6 extends StatelessWidget {
                                                                                         top: 170 * fem,
                                                                                           child: Container(
                                                                                             // group34423gfD (197:262)
-                                                                                            margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 35*fem, 0*fem),
+                                                                                            margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 65*fem, 0*fem),
                                                                                             width:  58*fem,
                                                                                             height:  51*fem,
                                                                                             child: Image.asset('images/icon image/icon gallery.png',
@@ -720,7 +795,11 @@ class Scene6 extends StatelessWidget {
             ],
           ),
         ),
+            ],
       ),
+
+    )
+      )
 
     );
   }

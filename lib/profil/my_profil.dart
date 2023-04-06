@@ -10,7 +10,10 @@ class Scene4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 377;
-    double fem = MediaQuery.of(context).size.width / baseWidth;
+    double fem = MediaQuery
+        .of(context)
+        .size
+        .width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
       body: Container(
@@ -330,32 +333,60 @@ class Scene4 extends StatelessWidget {
                         ),
                       ),
                     ),
-                Positioned(
-                  // navbarxn1 (37:337)
-                  left:  140*fem,
-                  top:  69*fem,
-                        child: Container(
-                    // profil7YR (37:340)
-                    margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 87*fem, 0*fem),
-                    child: Text(
-                      'Profil',
-                      style:  GoogleFonts.manrope(
-                        fontSize:  35*ffem,
-                        fontWeight:  FontWeight.w600,
-                        height:  0.6857142857*ffem/fem,
-                        color:  const Color(0xffffffff),
+                    Positioned(
+                      // navbarxn1 (37:337)
+                      left: 140 * fem,
+                      top: 69 * fem,
+                      child: Container(
+                        // profil7YR (37:340)
+                        margin: EdgeInsets.fromLTRB(
+                            0 * fem, 0 * fem, 87 * fem, 0 * fem),
+                        child: Text(
+                          'Profil',
+                          style: GoogleFonts.manrope(
+                            fontSize: 35 * ffem,
+                            fontWeight: FontWeight.w600,
+                            height: 0.6857142857 * ffem / fem,
+                            color: const Color(0xffffffff),
+                          ),
+                        ),
                       ),
-                ),
-                ),
-                ),
+                    ),
                   ],
                 ),
               ),
+              Stack(
+                children: [
+              Container(
+                color: Colors.grey[300],
+                child: NavigationDrawer(children: [],),
+              ),
+                  Container(
+                    // navbar2tMR (90:272)
+                    padding:  EdgeInsets.fromLTRB(32*fem, 32*fem, 32*fem, 32*fem),
+                    width:  200*fem,
+                    height:  600*fem,
+                    decoration:  BoxDecoration (
+                      color:  Color(0xff393535),
+                      borderRadius:  BorderRadius.only (
+                        topLeft:  Radius.circular(32*fem),
+                        bottomLeft:  Radius.circular(32*fem),
+                      ),
+                    ),
+                  ),
+          ],
+              ),
               const Tabar(),
+
             ],
           ),
         ),
       ),
+
     );
   }
 }
+
+
+
+

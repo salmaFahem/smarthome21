@@ -1,11 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smarthome21/adddevice/add_device.dart';
 
+import '../devices/my_devices.dart';
 import '../group/tab_bar.dart';
 
-class Scene5 extends StatelessWidget {
+const List<String> list = <String>[
+  'Select device',
+  'Device 1',
+  'Device 2',
+  'Device 3'
+];
+const List<String> list1 = <String>[
+  'Select device',
+  'Device 1',
+  'Device 2',
+  'Device 3'
+];
+const List<String> list2 = <String>[
+  'Select device',
+  'Device 1',
+  'Device 2',
+  'Device 3'
+];
+
+class Scene5 extends StatefulWidget {
   const Scene5({Key? key}) : super(key: key);
 
+  @override
+  _Scene5State createState() => _Scene5State();
+}
+
+class _Scene5State extends State<Scene5> {
+  String dropdownValue = list.first;
+  String dropdownValue1 = list1.first;
+  String dropdownValue2 = list2.first;
+  bool _bool = true;
   @override
   Widget build(BuildContext context) {
     double baseWidth = 377.0; // Define your new base width here
@@ -18,137 +48,538 @@ class Scene5 extends StatelessWidget {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
-        body: Container(
+      body: Container(
+        width: double.infinity,
+        child: Container(
           width: double.infinity,
-          child: Container(
-            width: double.infinity,
-            height: double.infinity,
-            decoration: const BoxDecoration(
-              color: Color(0xffffffff),
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(
-                  'images/iimage/room.png',
-                ),
+          height: double.infinity,
+          decoration: const BoxDecoration(
+            color: Color(0xffffffff),
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage(
+                'images/iimage/bed room.png',
               ),
-            ),
-            child: Stack(
-                children: [
-              Positioned(
-                left: 135 * fem,
-                top: 70 * fem,
-                child: Container(
-                  margin: EdgeInsets.fromLTRB(
-                      0 * fem, 0 * fem, 87 * fem, 0 * fem),
-                  child: Text(
-                    'Rooms',
-                    style: GoogleFonts.manrope(
-                      fontSize: 33 * ffem,
-                      fontWeight: FontWeight.w600,
-                      height: 0.6857142857 * ffem / fem,
-                      color: const Color.fromARGB(255, 255, 255, 255),
-                    ),
-                  ),
-                ),
-              ),
-              const Tabar(),
-
-              //carro isar
-              Positioned(
-                left: 9 * fem,
-                top: 140 * fem,
-                child: Container(
-                  width: 169 * fem,
-                  height: 258 * fem,
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                  Stack(
-                  children: [
-                  ClipRect(
-                  child: Container(
-                  margin: EdgeInsets.fromLTRB(
-                  0 * fem, 0 * fem, 0 * fem, 21 * fem),
-                  padding: EdgeInsets.fromLTRB(
-                      3 * fem, 19 * fem, 3 * fem, 19 * fem),
-                  width: double.infinity,
-                  height: 177 * fem,
-                  decoration: BoxDecoration(
-                    border:
-                    Border.all(color: Color(0xffffffff)),
-                    color: Color.fromARGB(86, 0, 0, 0),
-                    borderRadius:
-                    BorderRadius.circular(24 * fem),
-                  ),
-                ),
-              ),
-
-                Positioned(
-                  top: 21 * fem,
-                  child: SizedBox(
-                    width: 163 * fem,
-                    height: 139 * fem,
-                    child: Image.asset(
-                      'images/icon image/cool.png',
-                      width: 175.33 * fem,
-                      height: 88 * fem,
-                    ),
-                  ),
-                ),
-                ],
-              ),
-            ],
             ),
           ),
-        ),
-                  //carro isar
-                  Positioned(
-                    left: 200 * fem,
-                    top: 140 * fem,
-                    child: Container(
-                      width: 169 * fem,
-                      height: 258 * fem,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Stack(
-                            children: [
-                              ClipRect(
-                                child: Container(
-                                  margin: EdgeInsets.fromLTRB(
-                                      0 * fem, 0 * fem, 0 * fem, 21 * fem),
-                                  padding: EdgeInsets.fromLTRB(
-                                      3 * fem, 19 * fem, 3 * fem, 19 * fem),
-                                  width: double.infinity,
-                                  height: 177 * fem,
-                                  decoration: BoxDecoration(
-                                    border:
-                                    Border.all(color: Color(0xffffffff)),
-                                    color: Color.fromARGB(86, 0, 0, 0),
-                                    borderRadius:
-                                    BorderRadius.circular(24 * fem),
-                                  ),
-                                ),
-                              ),
-
-                              Positioned(
-                                top: 21 * fem,
-                                child: SizedBox(
-                                  width: 163 * fem,
-                                  height: 139 * fem,
-                                  child: Image.asset(
-                                    'images/icon image/cool.png',
-                                    width: 175.33 * fem,
-                                    height: 88 * fem,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 125 * fem,
+                  top: 50 * fem,
+                  child: Container(
+                    margin: EdgeInsets.fromLTRB(
+                        0 * fem, 0 * fem, 87 * fem, 0 * fem),
+                    child: Text(
+                      'Bed Room',
+                      style: GoogleFonts.manrope(
+                        fontSize: 33 * ffem,
+                        fontWeight: FontWeight.w600,
+                        height: 0.6857142857 * ffem / fem,
+                        color: const Color.fromARGB(255, 255, 255, 255),
                       ),
                     ),
                   ),
-        ]))));
+                ),
+                const Tabar(),
+                Container(
+                  width: 900 * fem,
+                  height: 500 * fem,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0),
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  margin: EdgeInsets.only(top: 80.0, bottom: 100.0),
+                  child: SingleChildScrollView(
+                    child: Stack(
+                      children: [
+                        Wrap(
+                          direction: Axis.horizontal,
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          children: [
+                            Wrap(
+                              direction: Axis.vertical,
+                              crossAxisAlignment: WrapCrossAlignment.center,
+                              children: [
+                                Container(
+                                  margin:
+                                      EdgeInsets.only(top: 0.0, bottom: 0.0),
+                                  width: 175 * fem,
+                                  height: 208 * fem,
+                                  child: Stack(
+                                    children: [
+                                      Positioned(
+                                        left: 10 * fem,
+                                        top: 6 * fem,
+                                        child: Container(
+                                          width: 159 * fem,
+                                          height: 238 * fem,
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: [
+                                              Stack(
+                                                children: [
+                                                  ClipRect(
+                                                    child: Container(
+                                                      margin:
+                                                          EdgeInsets.fromLTRB(
+                                                              0 * fem,
+                                                              0 * fem,
+                                                              0 * fem,
+                                                              21 * fem),
+                                                      padding:
+                                                          EdgeInsets.fromLTRB(
+                                                              3 * fem,
+                                                              19 * fem,
+                                                              3 * fem,
+                                                              19 * fem),
+                                                      width: double.infinity,
+                                                      height: 157 * fem,
+                                                      decoration: BoxDecoration(
+                                                        border: Border.all(
+                                                            color: Color(
+                                                                0xffffffff)),
+                                                        color: Color.fromARGB(
+                                                            86, 0, 0, 0),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(
+                                                                    24 * fem),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Positioned(
+                                                    top: 20 * fem,
+                                                    left: 5,
+                                                    child: SizedBox(
+                                                      width: 153 * fem,
+                                                      height: 119 * fem,
+                                                      child: Image.asset(
+                                                        'images/icon image/thaw.png',
+                                                        width: 155.33 * fem,
+                                                        height: 70 * fem,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      Positioned(
+                                        top: 171 * fem,
+                                        left: 25 * fem,
+                                        child: Container(
+                                          width: 130 * fem,
+                                          height: 35 * fem,
+                                          padding: EdgeInsets.fromLTRB(10 * fem,
+                                              0 * fem, 0 * fem, 0 * fem),
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(50),
+                                            color: Color.fromARGB(86, 0, 0, 0),
+                                            border: Border.all(
+                                                color: Color.fromARGB(
+                                                    255, 255, 255, 255)),
+                                          ),
+                                          child: DropdownButton<String>(
+                                            value: dropdownValue2,
+                                            icon: const Icon(
+                                              Icons.arrow_downward,
+                                              color: Color.fromRGBO(
+                                                  255, 107, 89, 1),
+                                            ),
+                                            iconSize: 20,
+                                            elevation: 10,
+                                            style: TextStyle(
+                                              color: Color.fromRGBO(
+                                                  255, 107, 89, 1),
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                            onChanged: (String? value2) {
+                                              setState(() {
+                                                dropdownValue2 = value2!;
+                                              });
+                                            },
+                                            items: list
+                                                .map<DropdownMenuItem<String>>(
+                                                    (String value2) {
+                                              return DropdownMenuItem<String>(
+                                                value: value2,
+                                                child: Text(value2),
+                                              );
+                                            }).toList(),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Wrap(
+                              direction: Axis.vertical,
+                              crossAxisAlignment: WrapCrossAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.all(10.0),
+                                  child: Container(
+                                    margin:
+                                        EdgeInsets.only(top: 0.0, bottom: 0.0),
+                                    width: 175 * fem,
+                                    height: 208 * fem,
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          right: 10 * fem,
+                                          top: 6 * fem,
+                                          child: Container(
+                                            width: 159 * fem,
+                                            height: 238 * fem,
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Stack(
+                                                  children: [
+                                                    ClipRect(
+                                                      child: Container(
+                                                        margin:
+                                                            EdgeInsets.fromLTRB(
+                                                                0 * fem,
+                                                                0 * fem,
+                                                                0 * fem,
+                                                                21 * fem),
+                                                        padding:
+                                                            EdgeInsets.fromLTRB(
+                                                                3 * fem,
+                                                                19 * fem,
+                                                                3 * fem,
+                                                                19 * fem),
+                                                        width: double.infinity,
+                                                        height: 157 * fem,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          border: Border.all(
+                                                              color: Color(
+                                                                  0xffffffff)),
+                                                          color: Color.fromARGB(
+                                                              86, 0, 0, 0),
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      24 * fem),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Positioned(
+                                                      top: 20 * fem,
+                                                      child: SizedBox(
+                                                        width: 153 * fem,
+                                                        height: 119 * fem,
+                                                        child: Image.asset(
+                                                          'images/icon image/cool.png',
+                                                          width: 155.33 * fem,
+                                                          height: 68 * fem,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                        Positioned(
+                                          top: 171 * fem,
+                                          right: 25 * fem,
+                                          child: Container(
+                                            width: 130 * fem,
+                                            height: 35 * fem,
+                                            padding: EdgeInsets.fromLTRB(
+                                                10 * fem,
+                                                0 * fem,
+                                                0 * fem,
+                                                0 * fem),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(50),
+                                              color:
+                                                  Color.fromARGB(86, 0, 0, 0),
+                                              border: Border.all(
+                                                  color: Color.fromARGB(
+                                                      255, 255, 255, 255)),
+                                            ),
+                                            child: DropdownButton<String>(
+                                              value: dropdownValue1,
+                                              icon: const Icon(
+                                                Icons.arrow_downward,
+                                                color: Color.fromRGBO(
+                                                    255, 107, 89, 1),
+                                              ),
+                                              iconSize: 20,
+                                              elevation: 10,
+                                              style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    255, 107, 89, 1),
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                              onChanged: (String? value1) {
+                                                setState(() {
+                                                  dropdownValue1 = value1!;
+                                                });
+                                              },
+                                              items: list.map<
+                                                      DropdownMenuItem<String>>(
+                                                  (String value1) {
+                                                return DropdownMenuItem<String>(
+                                                  value: value1,
+                                                  child: Text(value1),
+                                                );
+                                              }).toList(),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Wrap(
+                              direction: Axis.vertical,
+                              crossAxisAlignment: WrapCrossAlignment.center,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.all(0.0),
+                                  child: Container(
+                                    margin:
+                                        EdgeInsets.only(top: 0.0, bottom: 0.0),
+                                    width: 273 * fem,
+                                    height: 230 * fem,
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 130 * fem,
+                                          bottom: 20 * fem,
+                                          child: Container(
+                                            width: 100 * fem,
+                                            height: 210 * fem,
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                Stack(
+                                                  children: [
+                                                    GestureDetector(
+                                                      onTap: () {
+                                                        setState(() {
+                                                          _bool = !_bool;
+                                                        });
+                                                      },
+                                                      child: ClipRect(
+                                                        child: Container(
+                                                          width:
+                                                              double.infinity,
+                                                          height: 177 * fem,
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            border: Border.all(
+                                                                color: Color(
+                                                                    0xffffffff)),
+                                                            color:
+                                                                Color.fromARGB(
+                                                                    86,
+                                                                    0,
+                                                                    0,
+                                                                    0),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        50 *
+                                                                            fem),
+                                                          ),
+                                                          child:
+                                                              AnimatedCrossFade(
+                                                            firstChild:
+                                                                Image.asset(
+                                                              'images/icon image/locked.png',
+                                                              width: 120 * fem,
+                                                              height: 160 * fem,
+                                                            ),
+                                                            secondChild:
+                                                                Image.asset(
+                                                              'images/icon image/unlocked.png',
+                                                              width: 120 * fem,
+                                                              height: 160 * fem,
+                                                            ),
+                                                            duration: Duration(
+                                                                seconds: 1),
+                                                            crossFadeState: _bool
+                                                                ? CrossFadeState
+                                                                    .showFirst
+                                                                : CrossFadeState
+                                                                    .showSecond,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                        Positioned(
+                                          bottom: 2 * fem,
+                                          left: 120 * fem,
+                                          child: Container(
+                                            width: 130 * fem,
+                                            height: 35 * fem,
+                                            padding: EdgeInsets.fromLTRB(
+                                                10 * fem,
+                                                0 * fem,
+                                                0 * fem,
+                                                0 * fem),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(50),
+                                              color:
+                                                  Color.fromARGB(86, 0, 0, 0),
+                                              border: Border.all(
+                                                  color: Color.fromARGB(
+                                                      255, 255, 255, 255)),
+                                            ),
+                                            child: DropdownButton<String>(
+                                              value: dropdownValue,
+                                              icon: const Icon(
+                                                Icons.arrow_downward,
+                                                color: Color.fromRGBO(
+                                                    255, 107, 89, 1),
+                                              ),
+                                              iconSize: 20,
+                                              elevation: 10,
+                                              style: TextStyle(
+                                                color: Color.fromRGBO(
+                                                    255, 107, 89, 1),
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                              onChanged: (String? value) {
+                                                setState(() {
+                                                  dropdownValue = value!;
+                                                });
+                                              },
+                                              items: list.map<
+                                                      DropdownMenuItem<String>>(
+                                                  (String value) {
+                                                return DropdownMenuItem<String>(
+                                                  value: value,
+                                                  child: Text(value),
+                                                );
+                                              }).toList(),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Wrap(
+                              direction: Axis.vertical,
+                              crossAxisAlignment: WrapCrossAlignment.center,
+                              children: [
+                                Stack(
+                                  children: [
+                                    Container(
+                                      margin:
+                                      EdgeInsets.only(left: 20.0, bottom: 0.0),
+                                      width: 130*fem,
+                                      height: 130*fem,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: const Color(0xe5ffffff)),
+                                        borderRadius:
+                                            BorderRadius.circular(30 * fem),
+                                        color: const Color(0xffffffff),
+                                        gradient: const LinearGradient(
+                                          begin: Alignment(0, -1),
+                                          end: Alignment(0, 1),
+                                          colors: <Color>[
+                                            Color(0xe5323534),
+                                            Color(0xe569614c)
+                                          ],
+                                          stops: <double>[0.38, 0.953],
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 150*fem, // set width to match parent
+                                      height:200*fem, // set height to match parent
+                                      child: Stack(
+                                        alignment: Alignment.topRight,
+                                        children: [
+                                          Positioned(
+                                            top: 100.0,
+                                            left: 55.0,
+                                            child: Text(
+                                              'add device...',
+                                              style: GoogleFonts.inter(
+                                                fontSize: 12 * ffem,
+                                                color: const Color(0xffffffff),
+                                              ),
+                                            ),
+                                          ),
+                                          Positioned(
+                                            top: 30.0,
+                                            left: 60.0,
+                                            child: FloatingActionButton(
+                                              onPressed: () {
+                                                showModalBottomSheet(
+                                                  isScrollControlled: true,
+                                                    context: context,
+                                                    builder: (context) =>
+                                                        Scene9()); // <-- Add the missing closing parenthesis here
+                                              },
+                                              backgroundColor:
+                                                  Colors.orangeAccent,
+                                              child: const Icon(Icons.add),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
   }
 }
