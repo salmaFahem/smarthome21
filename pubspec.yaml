@@ -107,6 +107,7 @@ flutter:
      - images/icon image/icon camera.png
      - images/icon image/locked.png
      - images/icon image/unlocked.png
+     - images/icon image/camera2.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
