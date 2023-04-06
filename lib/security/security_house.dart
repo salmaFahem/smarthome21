@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../devices/my_devices.dart';
+import '../group/tab_bar.dart';
 
 class Scene7 extends StatelessWidget {
   const Scene7({Key? key}) : super(key: key);
@@ -336,6 +337,7 @@ class Scene7 extends StatelessWidget {
                         ),
                       ),
                     ))),
+            const Tabar(),
           ],
         ),
       ),
