@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smarthome21/devices/my_devices.dart';
 
 import '../group/tab_bar.dart';
 
@@ -141,7 +142,7 @@ class Scene6 extends StatelessWidget {
                                   height: 440 * fem,
                                   decoration: BoxDecoration(
                                     borderRadius:
-                                        BorderRadius.circular(60 * fem),
+                                    BorderRadius.circular(60 * fem),
                                     gradient: const LinearGradient(
                                       begin: Alignment(0, -1),
                                       end: Alignment(0, 1),
@@ -154,7 +155,7 @@ class Scene6 extends StatelessWidget {
                                   ),
                                   child: Column(
                                     crossAxisAlignment:
-                                        CrossAxisAlignment.center,
+                                    CrossAxisAlignment.center,
                                     children: [
                                       Container(
                                         margin: EdgeInsets.fromLTRB(155 * fem,
@@ -164,7 +165,7 @@ class Scene6 extends StatelessWidget {
                                         decoration: BoxDecoration(
                                           color: const Color(0xffffffff),
                                           borderRadius:
-                                              BorderRadius.circular(40 * fem),
+                                          BorderRadius.circular(40 * fem),
                                         ),
                                       ),
                                       SizedBox(
@@ -190,61 +191,61 @@ class Scene6 extends StatelessWidget {
                                                     height: 270 * fem,
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsets.only(
+                                                      const EdgeInsets.only(
                                                         top: 12.0,
                                                         right: 50.0,
                                                       ),
                                                       child:
-                                                          SingleChildScrollView(
+                                                      SingleChildScrollView(
                                                         // Add SingleChildScrollView here
                                                         child: Column(
                                                           crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .center,
+                                                          CrossAxisAlignment
+                                                              .center,
                                                           children: [
                                                             Row(
                                                               crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .center,
+                                                              CrossAxisAlignment
+                                                                  .center,
                                                               children: [
                                                                 Padding(
                                                                   padding: const EdgeInsets
-                                                                          .only(
+                                                                      .only(
                                                                       bottom:
-                                                                          40.0,
+                                                                      40.0,
                                                                       right:
-                                                                          30.0,
+                                                                      30.0,
                                                                       left:
-                                                                          30.0),
+                                                                      30.0),
                                                                   child:
-                                                                      Positioned(
+                                                                  Positioned(
                                                                     // image7fYy (180:692)
                                                                     left: 0,
                                                                     top:
-                                                                        -6.129699707 *
-                                                                            fem,
+                                                                    -6.129699707 *
+                                                                        fem,
                                                                     child:
-                                                                        Align(
+                                                                    Align(
                                                                       child:
-                                                                          SizedBox(
+                                                                      SizedBox(
                                                                         width: 110.37 *
                                                                             fem,
                                                                         height: 180.13 *
                                                                             fem,
                                                                         child:
-                                                                            Container(
+                                                                        Container(
                                                                           decoration:
-                                                                              BoxDecoration(
+                                                                          BoxDecoration(
                                                                             borderRadius:
-                                                                                BorderRadius.circular(30 * fem),
+                                                                            BorderRadius.circular(30 * fem),
                                                                             image:
-                                                                                const DecorationImage(
+                                                                            const DecorationImage(
                                                                               image: AssetImage('images/iimage/bed room.png'),
                                                                               fit: BoxFit.cover,
                                                                             ),
                                                                           ),
                                                                           child:
-                                                                              Stack(
+                                                                          Stack(
                                                                             children: [
                                                                               Positioned(
                                                                                 // rectangle240r29 (107:442)
@@ -323,38 +324,38 @@ class Scene6 extends StatelessWidget {
                                                                 ),
                                                                 Padding(
                                                                   padding: const EdgeInsets
-                                                                          .only(
+                                                                      .only(
                                                                       bottom:
-                                                                          40.0),
+                                                                      40.0),
                                                                   child:
-                                                                      Positioned(
+                                                                  Positioned(
                                                                     // image7fYy (180:692)
                                                                     left: 10,
                                                                     top:
-                                                                        100.129699707 *
-                                                                            fem,
+                                                                    100.129699707 *
+                                                                        fem,
                                                                     child:
-                                                                        Align(
+                                                                    Align(
                                                                       child:
-                                                                          SizedBox(
+                                                                      SizedBox(
                                                                         width: 110.37 *
                                                                             fem,
                                                                         height: 180.13 *
                                                                             fem,
                                                                         child:
-                                                                            Container(
+                                                                        Container(
                                                                           decoration:
-                                                                              BoxDecoration(
+                                                                          BoxDecoration(
                                                                             borderRadius:
-                                                                                BorderRadius.circular(30 * fem),
+                                                                            BorderRadius.circular(30 * fem),
                                                                             image:
-                                                                                const DecorationImage(
+                                                                            const DecorationImage(
                                                                               image: AssetImage('images/iimage/bathroom.png'),
                                                                               fit: BoxFit.cover,
                                                                             ),
                                                                           ),
                                                                           child:
-                                                                              Stack(
+                                                                          Stack(
                                                                             children: [
                                                                               Positioned(
                                                                                 // rectangle240r29 (107:442)
@@ -435,47 +436,47 @@ class Scene6 extends StatelessWidget {
                                                             ),
                                                             Row(
                                                               crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .center,
+                                                              CrossAxisAlignment
+                                                                  .center,
                                                               children: [
                                                                 Padding(
                                                                   padding: const EdgeInsets
-                                                                          .only(
+                                                                      .only(
                                                                       bottom:
-                                                                          40.0,
+                                                                      40.0,
                                                                       right:
-                                                                          30.0,
+                                                                      30.0,
                                                                       left:
-                                                                          30.0),
+                                                                      30.0),
                                                                   child:
-                                                                      Positioned(
+                                                                  Positioned(
                                                                     // image7fYy (180:692)
                                                                     left: 0,
                                                                     top:
-                                                                        -6.129699707 *
-                                                                            fem,
+                                                                    -6.129699707 *
+                                                                        fem,
                                                                     child:
-                                                                        Align(
+                                                                    Align(
                                                                       child:
-                                                                          SizedBox(
+                                                                      SizedBox(
                                                                         width: 110.37 *
                                                                             fem,
                                                                         height: 180.13 *
                                                                             fem,
                                                                         child:
-                                                                            Container(
+                                                                        Container(
                                                                           decoration:
-                                                                              BoxDecoration(
+                                                                          BoxDecoration(
                                                                             borderRadius:
-                                                                                BorderRadius.circular(30 * fem),
+                                                                            BorderRadius.circular(30 * fem),
                                                                             image:
-                                                                                const DecorationImage(
+                                                                            const DecorationImage(
                                                                               image: AssetImage('images/iimage/living room.png'),
                                                                               fit: BoxFit.cover,
                                                                             ),
                                                                           ),
                                                                           child:
-                                                                              Stack(
+                                                                          Stack(
                                                                             children: [
                                                                               Positioned(
                                                                                 // rectangle240r29 (107:442)
@@ -554,18 +555,18 @@ class Scene6 extends StatelessWidget {
                                                                 ),
                                                                 Padding(
                                                                   padding: const EdgeInsets
-                                                                          .only(
+                                                                      .only(
                                                                       bottom:
-                                                                          40.0),
+                                                                      40.0),
                                                                   child:
-                                                                      Positioned(
+                                                                  Positioned(
                                                                     // image7fYy (180:692)
                                                                     left: 10,
                                                                     top:
-                                                                        100.129699707 *
-                                                                            fem,
+                                                                    100.129699707 *
+                                                                        fem,
                                                                     child:
-                                                                        Align(
+                                                                    Align(
                                                                       child: SizedBox(
                                                                           width: 110.37 * fem,
                                                                           height: 180.13 * fem,
@@ -606,7 +607,6 @@ class Scene6 extends StatelessWidget {
                                                                                       ),
                                                                                     ),
                                                                                   ),
-
                                                                                   Stack(
                                                                                     children: [
                                                                                       Positioned(
@@ -760,46 +760,42 @@ class Scene6 extends StatelessWidget {
                                                                                                                   gradient: LinearGradient(
                                                                                                                     begin: Alignment(0, -1),
                                                                                                                     end: Alignment(0, 1),
-                                                                                                                    colors: <Color>[
-                                                                                                                      Color(0xe5323534),
-                                                                                                                      Color(0xe569614c)
-                                                                                                                    ],
+                                                                                                                    colors: <Color>[Color(0xe5323534), Color(0xe569614c)],
                                                                                                                     stops: <double>[0.38, 0.953],
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Stack(
                                                                                                                   children: [
                                                                                                                     Positioned(
-                                                                                                                      left: 20*fem,
-                                                                                                                      top: 50*fem,
+                                                                                                                      left: 20 * fem,
+                                                                                                                      top: 80 * fem,
                                                                                                                       child: Container(
-                                                                                                                      // nowyoucanadddevicesorsensorsto (180:655)
-                                                                                                                      margin:  EdgeInsets.fromLTRB(0*fem, 0*fem, 28*fem, 88*fem),
-                                                                                                                      constraints:  BoxConstraints (
-                                                                                                                        maxWidth:  304*fem,
-                                                                                                                      ),
-                                                                                                                      child:
-                                                                                                                      Text(
-                                                                                                                        ' now you can add devices or\n\n sensors to your room...',
-                                                                                                                        style: GoogleFonts.inter(
-                                                                                                                          fontSize:  20*ffem,
-                                                                                                                          fontWeight:  FontWeight.w400,
-                                                                                                                          height:  0.7*ffem/fem,
-                                                                                                                          color:  Color(0xffffffff),
+                                                                                                                        // nowyoucanadddevicesorsensorsto (180:655)
+                                                                                                                        margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 28 * fem, 88 * fem),
+                                                                                                                        constraints: BoxConstraints(
+                                                                                                                          maxWidth: 304 * fem,
+                                                                                                                        ),
+                                                                                                                        child: Text(
+                                                                                                                          ' now you can add devices or\n\n sensors to your room...',
+                                                                                                                          style: GoogleFonts.inter(
+                                                                                                                            fontSize: 20 * ffem,
+                                                                                                                            fontWeight: FontWeight.w400,
+                                                                                                                            height: 0.7 * ffem / fem,
+                                                                                                                            color: Color(0xffffffff),
+                                                                                                                          ),
                                                                                                                         ),
                                                                                                                       ),
-                                                                                                                    ),)
-
-
-                                                                                                        //               Positioned(
-                                                                                                        //                 bottom: 30 * fem,
-                                                                                                        //                 left: 165 * fem,
-                                                                                                        //                 child: FloatingActionButton(
-                                                                                                        //                 onPressed: ()
-                                                                                                        //
-                                                                                                        // ),
-                                                                                                        // ),
-                                                                                                        ],
+                                                                                                                    ),
+                                                                                                                    Positioned(
+                                                                                                                        bottom: 120 * fem,
+                                                                                                                        left: 165 * fem,
+                                                                                                                        child: FloatingActionButton(onPressed: () {
+                                                                                                                          showModalBottomSheet(isScrollControlled: true, context: context, builder: (context) => Scene9());
+                                                                                                                        },
+                                                                                                                        backgroundColor: Colors.orangeAccent,
+                                                                                                                          child: const Icon(Icons.done),
+                                                                                                                        ),),
+                                                                                                                  ],
                                                                                                                 ),
                                                                                                               ),
                                                                                                             ],
@@ -807,7 +803,7 @@ class Scene6 extends StatelessWidget {
                                                                                                         );
                                                                                                       },
                                                                                                       backgroundColor: Colors.orangeAccent,
-                                                                                                      child: Icon(Icons.done),
+                                                                                                      child: const Icon(Icons.done),
                                                                                                     ),
                                                                                                   ),
                                                                                                 ],
@@ -818,7 +814,6 @@ class Scene6 extends StatelessWidget {
                                                                                           child: const Icon(Icons.add),
                                                                                         ),
                                                                                       ),
-
                                                                                     ],
                                                                                   ),
                                                                                 ],

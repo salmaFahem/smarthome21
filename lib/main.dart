@@ -8,6 +8,7 @@ import 'package:smarthome21/group/nav_bar.dart';
 import 'group/tab_bar.dart';
 import 'home/home.dart';
 import 'login/welcome.dart';
+import 'notification/notification.dart';
 import 'signup/sign_up.dart';
 import 'package:smarthome21/forgetpassword/forget_pass.dart';
 import 'package:smarthome21/profil/my_profil.dart';

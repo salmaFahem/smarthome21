@@ -1,8 +1,9 @@
 import 'dart:ui';
-import '../group/nav_bar.dart';
 import '../group/tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../navbar/navbar.dart';
 
 class Scene4 extends StatelessWidget {
   const Scene4({Key? key}) : super(key: key);
@@ -16,6 +17,14 @@ class Scene4 extends StatelessWidget {
         .width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Bed room'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
+      drawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(
@@ -32,10 +41,11 @@ class Scene4 extends StatelessWidget {
           ),
           child: Stack(
             children: [
+              //bottom container
               Positioned(
                 // iphone142zU5 (166:334)
                 left: 0 * fem,
-                top: 292 * fem,
+                top: 200 * fem,
                 child: Container(
                   width: 379 * fem,
                   height: 358 * fem,
@@ -253,6 +263,7 @@ class Scene4 extends StatelessWidget {
                   ),
                 ),
               ),
+              //top container
               Container(
                 // profilTLy (37:274)
                 width: double.infinity,
@@ -268,7 +279,7 @@ class Scene4 extends StatelessWidget {
                         child: Align(
                           child: SizedBox(
                             width: 377 * fem,
-                            height: 245 * fem,
+                            height: 185 * fem,
                             child: Container(
                               decoration: BoxDecoration(
                                 gradient: const LinearGradient(
@@ -295,7 +306,7 @@ class Scene4 extends StatelessWidget {
                     Positioned(
                       // welcomekatgremEeZ (37:402)
                       left: 76 * fem,
-                      top: 186 * fem,
+                      top: 126 * fem,
                       child: Align(
                         child: SizedBox(
                           width: 226 * fem,
@@ -314,8 +325,8 @@ class Scene4 extends StatelessWidget {
                     ),
                     Positioned(
                       // avatareiH (37:392)
-                      left: 147 * fem,
-                      top: 92 * fem,
+                      left: 137 * fem,
+                      top: 22 * fem,
                       child: Align(
                         child: SizedBox(
                           width: 80.02 * fem,
@@ -333,51 +344,10 @@ class Scene4 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Positioned(
-                      // navbarxn1 (37:337)
-                      left: 140 * fem,
-                      top: 69 * fem,
-                      child: Container(
-                        // profil7YR (37:340)
-                        margin: EdgeInsets.fromLTRB(
-                            0 * fem, 0 * fem, 87 * fem, 0 * fem),
-                        child: Text(
-                          'Profil',
-                          style: GoogleFonts.manrope(
-                            fontSize: 35 * ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 0.6857142857 * ffem / fem,
-                            color: const Color(0xffffffff),
-                          ),
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),
-              Stack(
-                children: [
-              Container(
-                color: Colors.grey[300],
-                child: NavigationDrawer(children: [],),
-              ),
-                  Container(
-                    // navbar2tMR (90:272)
-                    padding:  EdgeInsets.fromLTRB(32*fem, 32*fem, 32*fem, 32*fem),
-                    width:  200*fem,
-                    height:  600*fem,
-                    decoration:  BoxDecoration (
-                      color:  Color(0xff393535),
-                      borderRadius:  BorderRadius.only (
-                        topLeft:  Radius.circular(32*fem),
-                        bottomLeft:  Radius.circular(32*fem),
-                      ),
-                    ),
-                  ),
-          ],
-              ),
               const Tabar(),
-
             ],
           ),
         ),

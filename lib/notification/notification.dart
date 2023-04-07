@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../navbar/navbar.dart';
+
 class Notif extends  StatelessWidget {
   const Notif({Key? key}) : super(key: key);
 
@@ -15,6 +17,14 @@ class Notif extends  StatelessWidget {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Bed room'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
+      drawer: NavDrawer(),
         body: Container(
         width: double.infinity,
         child: Container(

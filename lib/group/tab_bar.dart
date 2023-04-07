@@ -16,7 +16,7 @@ class Tabar extends StatelessWidget {
         Positioned(
           // frame right (94:337)
           left: 0 * fem,
-          top: 550 * fem,
+          top: 465 * fem,
           child: Stack(
             children: [
               Image.asset(
@@ -50,7 +50,7 @@ class Tabar extends StatelessWidget {
             Positioned(
               // frame right (94:337)
               right: 0 * fem,
-              top: 550 * fem,
+              top: 465 * fem,
               child: Stack(
                 children: [
                   Image.asset(
@@ -84,7 +84,7 @@ class Tabar extends StatelessWidget {
         Positioned(
           // iconsiribjj (22:133)
           left: 146 * fem,
-          top: 537 * fem,
+          top: 468 * fem,
           child: Container(
             width: 80 * fem,
             height: 80 * fem,

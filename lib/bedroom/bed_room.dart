@@ -4,6 +4,7 @@ import 'package:smarthome21/adddevice/add_device.dart';
 
 import '../devices/my_devices.dart';
 import '../group/tab_bar.dart';
+import '../navbar/navbar.dart';
 
 const List<String> list = <String>[
   'Select device',
@@ -48,6 +49,14 @@ class _Scene5State extends State<Scene5> {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Bed room'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
+      drawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(
@@ -68,23 +77,6 @@ class _Scene5State extends State<Scene5> {
             ),
             child: Stack(
               children: [
-                Positioned(
-                  left: 125 * fem,
-                  top: 50 * fem,
-                  child: Container(
-                    margin: EdgeInsets.fromLTRB(
-                        0 * fem, 0 * fem, 87 * fem, 0 * fem),
-                    child: Text(
-                      'Bed Room',
-                      style: GoogleFonts.manrope(
-                        fontSize: 33 * ffem,
-                        fontWeight: FontWeight.w600,
-                        height: 0.6857142857 * ffem / fem,
-                        color: const Color.fromARGB(255, 255, 255, 255),
-                      ),
-                    ),
-                  ),
-                ),
                 const Tabar(),
                 Container(
                   width: 900 * fem,
@@ -101,6 +93,7 @@ class _Scene5State extends State<Scene5> {
                           direction: Axis.horizontal,
                           crossAxisAlignment: WrapCrossAlignment.center,
                           children: [
+                            //ysar
                             Wrap(
                               direction: Axis.vertical,
                               crossAxisAlignment: WrapCrossAlignment.center,
@@ -224,6 +217,7 @@ class _Scene5State extends State<Scene5> {
                                 ),
                               ],
                             ),
+                            //ymen
                             Wrap(
                               direction: Axis.vertical,
                               crossAxisAlignment: WrapCrossAlignment.center,
