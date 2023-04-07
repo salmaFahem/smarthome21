@@ -85,7 +85,7 @@ class _Scene12State extends State<Scene12> {
                     color: Colors.white.withOpacity(0),
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  margin: EdgeInsets.only(top: 20.0, bottom: 100.0),
+                  margin: EdgeInsets.only(top: 6.0, bottom: 100.0),
                   child: SingleChildScrollView(
                     child: Stack(
                       children: [
@@ -102,7 +102,7 @@ class _Scene12State extends State<Scene12> {
                                   margin:
                                   EdgeInsets.only(top: 0.0, bottom: 0.0),
                                   width: 175 * fem,
-                                  height: 250 * fem,
+                                  height: 220 * fem,
                                   child: Stack(
                                     children: [
                                       //carro isar
@@ -163,7 +163,7 @@ class _Scene12State extends State<Scene12> {
                                 ),
                                       //select isar
                                       Positioned(
-                                  top: 170 * fem,
+                                  top: 180 * fem,
                                   left: 20 * fem,
                                   child: Container(
                                     width: 130 * fem,
@@ -219,13 +219,13 @@ class _Scene12State extends State<Scene12> {
                             margin:
                             EdgeInsets.only(top: 0.0, bottom: 0.0),
                             width: 175 * fem,
-                            height: 250 * fem,
+                            height: 220 * fem,
                             child: Stack(
                               children: [
                                 //select imin
                                 Positioned(
-                                  top: 170 * fem,
-                                  right: 20 * fem,
+                                  top: 180 * fem,
+                                  right: 30 * fem,
                                   child: Container(
                                     width: 130 * fem,
                                     height: 35 * fem,
@@ -336,12 +336,12 @@ class _Scene12State extends State<Scene12> {
                                     margin:
                                     EdgeInsets.only(top: 0.0, bottom: 0.0),
                                     width: 273 * fem,
-                                    height: 230 * fem,
+                                    height: 250 * fem,
                                     child: Stack(
                                       children: [
                                         Positioned(
                                           left: 130 * fem,
-                                          bottom: 20 * fem,
+                                          top: 0 * fem,
                                           child: Container(
                                             width: 100 * fem,
                                             height: 210 * fem,
@@ -411,7 +411,7 @@ class _Scene12State extends State<Scene12> {
                                           ),
                                         ),
                                         Positioned(
-                                          bottom: 2 * fem,
+                                          top: 190 * fem,
                                           left: 120 * fem,
                                           child: Container(
                                             width: 130 * fem,
@@ -479,20 +479,21 @@ class _Scene12State extends State<Scene12> {
                                       EdgeInsets.only(left: 20.0, bottom: 0.0),
                                       width: 130*fem,
                                       height: 130*fem,
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                            color: const Color(0xe5ffffff)),
-                                        borderRadius:
-                                        BorderRadius.circular(30 * fem),
-                                        color: const Color(0xffffffff),
-                                        gradient: const LinearGradient(
-                                          begin: Alignment(0, -1),
-                                          end: Alignment(0, 1),
-                                          colors: <Color>[
-                                            Color(0xe5323534),
-                                            Color(0xe569614c)
-                                          ],
-                                          stops: <double>[0.38, 0.953],
+                                      child: ClipRect(
+                                        child: Container(
+                                          margin: EdgeInsets.fromLTRB(
+                                              0 * fem, 0 * fem, 0 * fem, 21 * fem),
+                                          padding: EdgeInsets.fromLTRB(
+                                              3 * fem, 19 * fem, 3 * fem, 19 * fem),
+                                          width: double.infinity,
+                                          height: 152 * fem,
+                                          decoration: BoxDecoration(
+                                            border:
+                                            Border.all(color: Color(0xffffffff)),
+                                            color: Color.fromARGB(86, 0, 0, 0),
+                                            borderRadius:
+                                            BorderRadius.circular(24 * fem),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -503,7 +504,7 @@ class _Scene12State extends State<Scene12> {
                                         alignment: Alignment.topRight,
                                         children: [
                                           Positioned(
-                                            top: 100.0,
+                                            top: 93.0,
                                             left: 55.0,
                                             child: Text(
                                               'add device...',
@@ -514,7 +515,7 @@ class _Scene12State extends State<Scene12> {
                                             ),
                                           ),
                                           Positioned(
-                                            top: 30.0,
+                                            top: 20.0,
                                             left: 60.0,
                                             child: FloatingActionButton(
                                               onPressed: () {

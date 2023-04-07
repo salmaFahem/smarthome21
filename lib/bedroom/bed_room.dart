@@ -85,7 +85,7 @@ class _Scene5State extends State<Scene5> {
                     color: Colors.white.withOpacity(0),
                     borderRadius: BorderRadius.circular(20.0),
                   ),
-                  margin: EdgeInsets.only(top: 80.0, bottom: 100.0),
+                  margin: EdgeInsets.only(top: 6.0, bottom: 100.0),
                   child: SingleChildScrollView(
                     child: Stack(
                       children: [
@@ -500,20 +500,21 @@ class _Scene5State extends State<Scene5> {
                                       EdgeInsets.only(left: 20.0, bottom: 0.0),
                                       width: 130*fem,
                                       height: 130*fem,
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                            color: const Color(0xe5ffffff)),
-                                        borderRadius:
-                                            BorderRadius.circular(30 * fem),
-                                        color: const Color(0xffffffff),
-                                        gradient: const LinearGradient(
-                                          begin: Alignment(0, -1),
-                                          end: Alignment(0, 1),
-                                          colors: <Color>[
-                                            Color(0xe5323534),
-                                            Color(0xe569614c)
-                                          ],
-                                          stops: <double>[0.38, 0.953],
+                                      child: ClipRect(
+                                        child: Container(
+                                          margin: EdgeInsets.fromLTRB(
+                                              0 * fem, 0 * fem, 0 * fem, 21 * fem),
+                                          padding: EdgeInsets.fromLTRB(
+                                              3 * fem, 19 * fem, 3 * fem, 19 * fem),
+                                          width: double.infinity,
+                                          height: 152 * fem,
+                                          decoration: BoxDecoration(
+                                            border:
+                                            Border.all(color: Color(0xffffffff)),
+                                            color: Color.fromARGB(86, 0, 0, 0),
+                                            borderRadius:
+                                            BorderRadius.circular(24 * fem),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -524,7 +525,7 @@ class _Scene5State extends State<Scene5> {
                                         alignment: Alignment.topRight,
                                         children: [
                                           Positioned(
-                                            top: 100.0,
+                                            top: 93.0,
                                             left: 55.0,
                                             child: Text(
                                               'add device...',
@@ -535,18 +536,18 @@ class _Scene5State extends State<Scene5> {
                                             ),
                                           ),
                                           Positioned(
-                                            top: 30.0,
+                                            top: 20.0,
                                             left: 60.0,
                                             child: FloatingActionButton(
                                               onPressed: () {
                                                 showModalBottomSheet(
-                                                  isScrollControlled: true,
+                                                    isScrollControlled: true,
                                                     context: context,
                                                     builder: (context) =>
                                                         Scene9()); // <-- Add the missing closing parenthesis here
                                               },
                                               backgroundColor:
-                                                  Colors.orangeAccent,
+                                              Colors.orangeAccent,
                                               child: const Icon(Icons.add),
                                             ),
                                           ),
