@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../devices/my_devices.dart';
 import '../group/tab_bar.dart';
 import '../navbar/navbar.dart';
+import '../rooms/room.dart';
 
 const List<String> list = <String>[
   'Select device',
@@ -50,13 +51,19 @@ class _Scene12State extends State<Scene12> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bed room'),
+        centerTitle: true,
+        title: Text('Bathroom'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Scene6()),
+            );
+          },
         ),
       ),
-      drawer: NavDrawer(),
+      endDrawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(

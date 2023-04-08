@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:smarthome21/devices/my_devices.dart';
 
 import '../group/tab_bar.dart';
+import '../home/home.dart';
+import '../navbar/navbar.dart';
 
 class Scene6 extends StatelessWidget {
   const Scene6({Key? key}) : super(key: key);
@@ -21,6 +23,23 @@ class Scene6 extends StatelessWidget {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Bed room'),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene13()),
+              );
+            },
+          ),
+        ),
+        endDrawer: NavDrawer(),
         body: Container(
             width: double.infinity,
             child: Container(
@@ -37,23 +56,6 @@ class Scene6 extends StatelessWidget {
               ),
               child: Stack(
                 children: [
-                  Positioned(
-                    left: 135 * fem,
-                    top: 50 * fem,
-                    child: Container(
-                      margin: EdgeInsets.fromLTRB(
-                          0 * fem, 0 * fem, 87 * fem, 0 * fem),
-                      child: Text(
-                        'Rooms',
-                        style: GoogleFonts.manrope(
-                          fontSize: 33 * ffem,
-                          fontWeight: FontWeight.w600,
-                          height: 0.6857142857 * ffem / fem,
-                          color: const Color.fromARGB(255, 255, 255, 255),
-                        ),
-                      ),
-                    ),
-                  ),
                   Container(
                     // autogroupdjxxVRd (4CtmzRL483DspT1vgMDJXX)
                     width: 1045 * fem,
@@ -63,7 +65,7 @@ class Scene6 extends StatelessWidget {
                         Positioned(
                           // frame3658BJT (107:373)
                           left: 40 * fem,
-                          top: 121 * fem,
+                          top: 20 * fem,
                           child: Container(
                             width: 286 * fem,
                             height: 63 * fem,
@@ -135,7 +137,7 @@ class Scene6 extends StatelessWidget {
                           children: [
                             Positioned(
                               left: 0,
-                              top: 210 * fem,
+                              top: 120 * fem,
                               child: SingleChildScrollView(
                                 child: Container(
                                   width: 380 * fem,
@@ -160,8 +162,8 @@ class Scene6 extends StatelessWidget {
                                       Container(
                                         margin: EdgeInsets.fromLTRB(155 * fem,
                                             15 * fem, 161 * fem, 45 * fem),
-                                        width: double.infinity,
-                                        height: 6 * fem,
+                                        width: 50* fem,
+                                        height: 3 * fem,
                                         decoration: BoxDecoration(
                                           color: const Color(0xffffffff),
                                           borderRadius:

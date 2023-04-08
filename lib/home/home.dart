@@ -3,16 +3,29 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../group/tab_bar.dart';
+import '../navbar/navbar.dart';
 
 class Scene13 extends StatelessWidget {
   const Scene13({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 377;
-    double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    double baseWidth = 377.0; // Define your new base width here
+    double fem = MediaQuery.of(context).size.width /
+        baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width /
+        baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height /
+        baseWidth; // Calculate scaling factor for height
+    double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
     return Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text('Home'),
+          backgroundColor: Colors.black,
+        ),
+        endDrawer: NavDrawer(),
         body: Container(
           width: double.infinity,
           child: Container(
@@ -29,28 +42,10 @@ class Scene13 extends StatelessWidget {
             ),
             child: Stack(
               children: [
-                Positioned(
-                  // iphone142zU5 (166:334)
-                  left: 130 * fem,
-                  top: 72 * fem,
-                  child: Container(
-                    // homePzD (9:194)
-                    margin:
-                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 85 * fem, 1 * fem),
-                    child: Text(
-                      'Home',
-                      style: GoogleFonts.inter(
-                        fontSize: 35 * ffem,
-                        fontWeight: FontWeight.w600,
-                        height: 0.6857142857 * ffem / fem,
-                        color: Color(0xfff7f7f7),
-                      ),
-                    ),
-                  ),
-                ),
+                //up
                 Positioned(
                   left: 12 * fem,
-                  top: 110 * fem,
+                  top: 35 * fem,
                   child: ClipRect(
                     child: BackdropFilter(
                       filter: ImageFilter.blur(
@@ -73,18 +68,18 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                // avghousetemp9P3 (8:149)
                 Positioned(
-                  // avghousetemp9P3 (8:149)
-                  left: 40 * fem,
-                  top: 200 * fem,
+                  left: 30 * fem,
+                  top: 137 * fem,
                   child: Align(
                     child: SizedBox(
-                      width: 123 * fem,
+                      width: 130 * fem,
                       height: 19 * fem,
                       child: Text(
                         'Avg House Temp',
                         style: GoogleFonts.roboto(
-                          fontSize: 14 * ffem,
+                          fontSize: 17 * ffem,
                           fontWeight: FontWeight.w700,
                           height: 1.1725 * ffem / fem,
                           color: Color(0xffffffff),
@@ -93,18 +88,18 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                // outsidetempCcD (8:150)
                 Positioned(
-                  // outsidetempCcD (8:150)
                   left: 223.0001831055 * fem,
-                  top: 200 * fem,
+                  top: 137 * fem,
                   child: Align(
                     child: SizedBox(
-                      width: 101 * fem,
+                      width: 110 * fem,
                       height: 19 * fem,
                       child: Text(
                         'Outside Temp',
                         style: GoogleFonts.roboto(
-                          fontSize: 14 * ffem,
+                          fontSize: 17 * ffem,
                           fontWeight: FontWeight.w700,
                           height: 1.1725 * ffem / fem,
                           color: Color(0xffffffff),
@@ -113,10 +108,10 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                // humidity4eR (8:151)
                 Positioned(
-                  // humidity4eR (8:151)
                   left: 56 * fem,
-                  top: 120 * fem,
+                  top: 55 * fem,
                   child: Align(
                     child: SizedBox(
                       width: 66 * fem,
@@ -124,7 +119,7 @@ class Scene13 extends StatelessWidget {
                       child: Text(
                         'Humidity',
                         style: GoogleFonts.roboto(
-                          fontSize: 14 * ffem,
+                          fontSize: 17 * ffem,
                           fontWeight: FontWeight.w700,
                           height: 1.1725 * ffem / fem,
                           color: Color(0xffffffff),
@@ -133,10 +128,10 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                // activedevicesWWR (8:152)
                 Positioned(
-                  // activedevicesWWR (8:152)
                   left: 215.0001831055 * fem,
-                  top: 120 * fem,
+                  top: 55 * fem,
                   child: Align(
                     child: SizedBox(
                       width: 110 * fem,
@@ -149,7 +144,7 @@ class Scene13 extends StatelessWidget {
                         child: Text(
                           'Active Devices ',
                           style: GoogleFonts.roboto(
-                            fontSize: 14 * ffem,
+                            fontSize: 17 * ffem,
                             fontWeight: FontWeight.w700,
                             height: 1.1725 * ffem / fem,
                             color: Color(0xffffffff),
@@ -159,10 +154,10 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                // rectangle12va9 (8:153)
                 Positioned(
-                  // rectangle12va9 (8:153)
                   left: 179.0001831055 * fem,
-                  top: 110 * fem,
+                  top: 35 * fem,
                   child: Align(
                     child: SizedBox(
                       width: 1 * fem,
@@ -175,10 +170,10 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                // rectangle13R17 (8:154)
                 Positioned(
-                  // rectangle13R17 (8:154)
                   left: 13 * fem,
-                  top: 185 * fem,
+                  top: 116 * fem,
                   child: Align(
                     child: SizedBox(
                       width: 353.01 * fem,
@@ -193,8 +188,8 @@ class Scene13 extends StatelessWidget {
                 ),
                 Positioned(
                   // tfP (8:156)
-                  left: 61.0001831055 * fem,
-                  top: 146 * fem,
+                  left: 66.0001831055 * fem,
+                  top: 80 * fem,
                   child: Align(
                     child: SizedBox(
                       width: 54 * fem,
@@ -202,7 +197,7 @@ class Scene13 extends StatelessWidget {
                       child: Text(
                         '46 %',
                         style: GoogleFonts.roboto(
-                          fontSize: 22 * ffem,
+                          fontSize: 20 * ffem,
                           fontWeight: FontWeight.w500,
                           height: 1.1725 * ffem / fem,
                           color: Color(0xffffffff),
@@ -214,7 +209,7 @@ class Scene13 extends StatelessWidget {
                 Positioned(
                   // group4YV3 (8:157)
                   left: 239 * fem,
-                  top: 136 * fem,
+                  top: 70 * fem,
                   child: TextButton(
                     onPressed: () {},
                     style: TextButton.styleFrom(
@@ -227,7 +222,7 @@ class Scene13 extends StatelessWidget {
                         child: Text(
                           '1',
                           style: GoogleFonts.roboto(
-                            fontSize: 22 * ffem,
+                            fontSize: 21 * ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725 * ffem / fem,
                             color: Color(0xffffffff),
@@ -239,8 +234,8 @@ class Scene13 extends StatelessWidget {
                 ),
                 Positioned(
                   // group2mMo (8:160)
-                  left: 56.0001831055 * fem,
-                  top: 225 * fem,
+                  left: 67.0001831055 * fem,
+                  top: 155 * fem,
                   child: Container(
                     width: 58.37 * fem,
                     height: 30 * fem,
@@ -251,7 +246,7 @@ class Scene13 extends StatelessWidget {
                           // s9w (8:161)
                           '18',
                           style: GoogleFonts.roboto(
-                            fontSize: 22 * ffem,
+                            fontSize: 20 * ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725 * ffem / fem,
                             color: Color(0xffffffff),
@@ -280,7 +275,7 @@ class Scene13 extends StatelessWidget {
                                 // cP1o (8:162)
                                 'C',
                                 style: GoogleFonts.roboto(
-                                  fontSize: 22 * ffem,
+                                  fontSize: 19 * ffem,
                                   fontWeight: FontWeight.w500,
                                   height: 1.1725 * ffem / fem,
                                   color: Color(0xffffffff),
@@ -295,8 +290,8 @@ class Scene13 extends StatelessWidget {
                 ),
                 Positioned(
                   // group27Ch (8:165)
-                  left: 240 * fem,
-                  top: 225 * fem,
+                  left: 255 * fem,
+                  top: 155 * fem,
                   child: Container(
                     width: 58.37 * fem,
                     height: 30 * fem,
@@ -307,7 +302,7 @@ class Scene13 extends StatelessWidget {
                           // o5X (8:166)
                           '31',
                           style: GoogleFonts.roboto(
-                            fontSize: 22 * ffem,
+                            fontSize: 20 * ffem,
                             fontWeight: FontWeight.w500,
                             height: 1.1725 * ffem / fem,
                             color: Color(0xffffffff),
@@ -336,7 +331,7 @@ class Scene13 extends StatelessWidget {
                                 // cMFT (8:167)
                                 'C',
                                 style: GoogleFonts.roboto(
-                                  fontSize: 22 * ffem,
+                                  fontSize: 19 * ffem,
                                   fontWeight: FontWeight.w500,
                                   height: 1.1725 * ffem / fem,
                                   color: Color(0xffffffff),
@@ -349,6 +344,7 @@ class Scene13 extends StatelessWidget {
                     ),
                   ),
                 ),
+                //down
                 Positioned(
                   // iphone142zU5 (166:334)
                   left: 0 * fem,
@@ -368,14 +364,14 @@ class Scene13 extends StatelessWidget {
                           sigmaX: 18 * fem,
                           sigmaY: 18 * fem,
                         ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                        child: Stack(
                           children: [
-                            Container(
+                            Positioned(
+                              left: 80*fem,
+                             top: 5*fem,
+                             child: Container(
                               // group655A9K (8:207)
-                              margin: EdgeInsets.fromLTRB(
-                                  90 * fem, 10 * fem, 96 * fem, 0 * fem),
-                              width: 181 * fem,
+                              width: 200 * fem,
                               height: 225 * fem,
                               decoration: const BoxDecoration(
                                 image: DecorationImage(
@@ -385,13 +381,27 @@ class Scene13 extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Opacity(
-                              // group3iu (8:252)
-                              opacity: 0.7,
+                            ),
+                            Positioned(
+                              left: 5*fem,
+                              top: 150*fem,
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 0 * fem, 0 * fem),
-                                width: 359 * fem,
+                                width: double.infinity,
+                                height: 100 * fem,
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image:
+                                    AssetImage('images/icon image/Group.png'),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              left: 5*fem,
+                              top: 150*fem,
+                              child: Container(
+                                width: double.infinity,
                                 height: 100 * fem,
                                 decoration: const BoxDecoration(
                                   image: DecorationImage(

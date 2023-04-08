@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smarthome21/home/home.dart';
 import '../devices/my_devices.dart';
 import '../group/tab_bar.dart';
 import '../navbar/navbar.dart';
@@ -26,17 +27,34 @@ class _Scene7State extends State<Scene7> {
   bool _bool2 = true;
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 377;
-    double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    double baseWidth = 377.0; // Define your new base width here
+    double fem = MediaQuery.of(context).size.width /
+        baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width /
+        baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height /
+        baseWidth; // Calculate scaling factor for height
+    double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
-        title: Text('Bed room'),
+        centerTitle: true,
+        title: Text('Security'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Scene13()),
+            );
+          },
+        ),
       ),
-      drawer: NavDrawer(),
+      endDrawer: NavDrawer(),
       body: Container(
-        width: double.infinity,
-        child: Container(
           width: double.infinity,
           height: double.infinity,
           decoration: const BoxDecoration(
@@ -599,7 +617,6 @@ class _Scene7State extends State<Scene7> {
             ),
           ),
         ),
-      ),
     );
   }
 }

@@ -5,6 +5,7 @@ import 'package:smarthome21/adddevice/add_device.dart';
 import '../devices/my_devices.dart';
 import '../group/tab_bar.dart';
 import '../navbar/navbar.dart';
+import '../rooms/room.dart';
 
 const List<String> list = <String>[
   'Select device',
@@ -50,13 +51,19 @@ class _Scene5State extends State<Scene5> {
 
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text('Bed room'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Scene6()),
+            );
+          },
         ),
       ),
-      drawer: NavDrawer(),
+      endDrawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(

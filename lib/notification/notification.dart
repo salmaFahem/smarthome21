@@ -18,7 +18,7 @@ class Notif extends  StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bed room'),
+        title: Text('Notification'),
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () => Navigator.of(context).pop(),

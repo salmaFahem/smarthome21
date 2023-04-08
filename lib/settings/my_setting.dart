@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:smarthome21/notification/notification.dart';
 
 import '../group/tab_bar.dart';
+import '../home/home.dart';
+import '../navbar/navbar.dart';
 
 class Scene11 extends StatelessWidget {
   const Scene11({Key? key}) : super(key: key);
@@ -16,6 +18,21 @@ class Scene11 extends StatelessWidget {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Setting'),
+        backgroundColor: Colors.black,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Scene13()),
+            );
+          },
+        ),
+      ),
+      endDrawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(
@@ -38,7 +55,7 @@ class Scene11 extends StatelessWidget {
             children: [
               Positioned(
                 left: 0 * fem,
-                top: 122 * fem,
+                top: 32 * fem,
                 child: ClipRRect(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(70 * fem),
@@ -344,22 +361,6 @@ class Scene11 extends StatelessWidget {
                             ),
                           ),
                         ),
-              ),
-              Positioned(
-                left: 107 * fem,
-                top: 50 * fem,
-                child: Container(
-                  margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 87 * fem, 0 * fem),
-                  child: Text(
-                    'Settings',
-                    style: GoogleFonts.manrope(
-                      fontSize: 33 * ffem,
-                      fontWeight: FontWeight.w600,
-                      height: 0.6857142857 * ffem / fem,
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                    ),
-                  ),
-                ),
               ),
               const Tabar(),
                       ],
