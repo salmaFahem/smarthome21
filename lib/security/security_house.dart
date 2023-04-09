@@ -365,10 +365,10 @@ class _Scene7State extends State<Scene7> {
 
             Positioned(
               left: 0 * fem,
-              top: 115 * fem,
+              top: 100 * fem,
                 child: Container(
                   width: 400 * fem,
-                  height: 350*fem,
+                  height: 370*fem,
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(0),
                     borderRadius: BorderRadius.circular(20.0),

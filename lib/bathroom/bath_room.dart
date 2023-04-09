@@ -50,9 +50,12 @@ class _Scene12State extends State<Scene12> {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         centerTitle: true,
         title: Text('Bathroom'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
@@ -287,7 +290,7 @@ class _Scene12State extends State<Scene12> {
                                             GestureDetector(
                                               onTap: () {
                                                 setState(() {
-                                                  _bool = !_bool;
+                                                  _bool1 = !_bool1;
                                                 });
                                               },
                                               child: ClipRect(
@@ -313,7 +316,7 @@ class _Scene12State extends State<Scene12> {
                                                       height: 177 * fem,
                                                     ),
                                                     duration: Duration(milliseconds: 0),
-                                                    crossFadeState: _bool
+                                                    crossFadeState: _bool1
                                                         ? CrossFadeState.showFirst
                                                         : CrossFadeState.showSecond,
                                                   ),
@@ -401,7 +404,7 @@ class _Scene12State extends State<Scene12> {
                                                               height: 160 * fem,
                                                             ),
                                                             duration: Duration(
-                                                                seconds: 1),
+                                                                seconds: 0),
                                                             crossFadeState: _bool
                                                                 ? CrossFadeState
                                                                 .showFirst

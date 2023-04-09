@@ -3,7 +3,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../devices/my_devices.dart';
 import '../group/tab_bar.dart';
+import '../navbar/navbar.dart';
 
 class Scene8 extends StatelessWidget {
   const Scene8({Key? key}) : super(key: key);
@@ -20,6 +22,21 @@ class Scene8 extends StatelessWidget {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Add device'),
+        backgroundColor: Colors.black,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Scene9()),
+            );
+          },
+        ),
+      ),
+      endDrawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(

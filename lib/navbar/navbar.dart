@@ -6,6 +6,8 @@ import 'package:smarthome21/security/security_house.dart';
 import 'package:smarthome21/devices/my_devices.dart';
 import 'package:smarthome21/settings/my_setting.dart';
 
+import '../notification/notification.dart';
+
 class NavDrawer extends StatelessWidget {
   const NavDrawer({Key? key}) : super(key: key);
 
@@ -23,12 +25,12 @@ class NavDrawer extends StatelessWidget {
     return SafeArea(
         child: Drawer(
           child: Container(
-            color: Color.fromARGB(224, 57, 53, 53),
+            color: const Color.fromARGB(224, 57, 53, 53),
             child: ListView(
               padding: EdgeInsets.zero,
               children: <Widget>[
                 DrawerHeader(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromRGBO(216, 146, 77, 1),
                   ),
                   child: Stack(
@@ -79,8 +81,8 @@ class NavDrawer extends StatelessWidget {
                     padding: const EdgeInsets.all(1),
                     child: Wrap(runSpacing: 16, children: [
                       ListTile(
-                        leading: Icon(Icons.home, color: Colors.white),
-                        title: Text(
+                        leading: const Icon(Icons.home, color: Colors.white),
+                        title: const Text(
                           'Home',
                           style: TextStyle(color: Colors.white),
                         ),
@@ -92,8 +94,8 @@ class NavDrawer extends StatelessWidget {
                         },
                       ),
                       ListTile(
-                        leading: Icon(Icons.room, color: Colors.white),
-                        title: Text(
+                        leading: const Icon(Icons.room, color: Colors.white),
+                        title: const Text(
                           'Rooms',
                           style: TextStyle(color: Colors.white),
                         ),
@@ -104,23 +106,24 @@ class NavDrawer extends StatelessWidget {
                         },
                       ),
                       ListTile(
-                        leading: Icon(Icons.notifications,
+                        leading: const Icon(Icons.notifications,
                             color: Colors.white), // Set the color of the icon here
-                        title: Text(
+                        title: const Text(
                           'Notifications',
                           style: TextStyle(
                               color:
                               Colors.white), // Set the color of the text here
                         ),
                         onTap: () {
-                          // close the drawer and do something
-                          Navigator.pop(context);
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (context) => const Notif()),
+                          );
                         },
                       ),
                       ListTile(
-                        leading: Icon(Icons.devices,
+                        leading: const Icon(Icons.devices,
                             color: Colors.white), // Set the color of the icon here
-                        title: Text(
+                        title: const Text(
                           'Devices',
                           style: TextStyle(
                               color:
@@ -133,9 +136,9 @@ class NavDrawer extends StatelessWidget {
                         },
                       ),
                       ListTile(
-                        leading: Icon(Icons.security,
+                        leading: const Icon(Icons.security,
                             color: Colors.white), // Set the color of the icon here
-                        title: Text(
+                        title: const Text(
                           'Security',
                           style: TextStyle(
                               color:
@@ -148,9 +151,9 @@ class NavDrawer extends StatelessWidget {
                         },
                       ),
                       ListTile(
-                        leading: Icon(Icons.settings,
+                        leading: const Icon(Icons.settings,
                             color: Colors.white), // Set the color of the icon here
-                        title: Text(
+                        title: const Text(
                           'Settings',
                           style: TextStyle(
                               color:

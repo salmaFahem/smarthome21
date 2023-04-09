@@ -3,6 +3,7 @@ import '../group/tab_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../home/home.dart';
 import '../navbar/navbar.dart';
 
 class Scene4 extends StatelessWidget {
@@ -21,13 +22,20 @@ class Scene4 extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bed room'),
+        centerTitle: true,
+        title: Text('Profil'),
+        backgroundColor: Colors.black,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Scene13()),
+            );
+          },
         ),
       ),
-      drawer: NavDrawer(),
+      endDrawer: NavDrawer(),
       body: Container(
         width: double.infinity,
         child: Container(

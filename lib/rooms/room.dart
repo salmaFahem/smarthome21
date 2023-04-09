@@ -26,7 +26,7 @@ class Scene6 extends StatelessWidget {
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Bed room'),
+          title: Text('Rooms'),
           backgroundColor: Colors.transparent,
           elevation: 0,
           leading: IconButton(

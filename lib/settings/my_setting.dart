@@ -81,6 +81,43 @@ class Scene11 extends StatelessWidget {
                     child: Stack(
                       children: [
                         Positioned(
+                      // frame3682VEj (155:256)
+                      left:  32*fem,
+                      top:  66*fem,
+                      child:
+                      Container(
+                        width:  313*fem,
+                        height:  49*fem,
+                        decoration:  BoxDecoration (
+                            border:  Border.all(color: Color(0xffd7914d)),
+                        borderRadius:  BorderRadius.circular(50*fem),
+                      ), child:
+                      Stack(
+                          children:  [
+                            Positioned(
+                              left: 10*fem,
+                                top: 10*fem,
+                                child: Image.asset('images/icon image/icon search.png'),),
+                        Positioned(
+                          left: 55*fem,
+                          top: 0*fem,
+                            child:Text(
+                                // searchbh5 (155:259)
+                                'search',
+                                style: GoogleFonts.inter(
+                                  fontSize:  20*ffem,
+                                  fontWeight:  FontWeight.w400,
+                                  height:  2*ffem/fem,
+                                  letterSpacing:  -0.4079999924*fem,
+                                  color:  Color(0xff000000),
+                                ),
+                              ),
+                        ),
+                              ],
+                      ),
+                      ),
+                  ),
+                        Positioned(
                           left: 160 * fem,
                           top: 28 * fem,
                           child: Container(//frame
@@ -167,7 +204,6 @@ class Scene11 extends StatelessWidget {
                             ),
                           ),
                         ),
-
                         Positioned(
                           // accountpzy (155:262)
                           left: 90 * fem,
@@ -236,7 +272,6 @@ class Scene11 extends StatelessWidget {
                             ),
                           ),
                         ),
-
                         Positioned(
                           // privacysecutritychangeemailorn (155:263)
                           left: 90 * fem,

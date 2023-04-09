@@ -50,9 +50,12 @@ class _Scene5State extends State<Scene5> {
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Bed room'),
+        title: Text('Bedroom'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {

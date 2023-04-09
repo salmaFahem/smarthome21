@@ -110,9 +110,22 @@ flutter:
      - images/icon image/camera2.png
      - images/icon image/marou7aoff.png
      - images/icon image/marou7aon.png
+     - images/icon image/icon device.png
+     - images/icon image/on.png
+     - images/icon image/off.png
+     - images/icon image/icon search.png
+     - images/icon image/speakeron.png
+     - images/icon image/speakeroff.png
+     - images/icon image/tvoff.png
+     - images/icon image/tvon.png
+     - images/icon image/fieron.png
+     - images/icon image/fieroff.png
+     - images/icon image/gasalarmon.png
+     - images/icon image/gasalarmoff.png
 
 
-  # An image asset can refer to one or more resolution-specific "variants", see
+
+         # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
   # For details regarding adding assets from package dependencies, see

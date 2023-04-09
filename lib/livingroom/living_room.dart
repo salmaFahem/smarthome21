@@ -56,6 +56,7 @@ class _Scene10State extends State<Scene10> {
         appBar: AppBar(
           centerTitle: true,
           title: Text('Living room'),
+          backgroundColor: Colors.black,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
