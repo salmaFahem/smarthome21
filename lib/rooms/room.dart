@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smarthome21/devices/my_devices.dart';
 
+import '../bathroom/bath_room.dart';
+import '../bedroom/bed_room.dart';
 import '../group/tab_bar.dart';
 import '../home/home.dart';
+import '../livingroom/living_room.dart';
 import '../navbar/navbar.dart';
 
 class Scene6 extends StatelessWidget {
@@ -235,7 +238,11 @@ class Scene6 extends StatelessWidget {
                                                                         height: 180.13 *
                                                                             fem,
                                                                         child:
-                                                                        Container(
+                                                                        InkWell(
+                                                                          onTap: () {
+                                                                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scene5()));
+                                                                          },
+                                                                        child: Container(
                                                                           decoration:
                                                                           BoxDecoration(
                                                                             borderRadius:
@@ -289,7 +296,7 @@ class Scene6 extends StatelessWidget {
                                                                                     height: 50.13 * fem,
                                                                                     child: Container(
                                                                                       child: Text(
-                                                                                        'Bathroom',
+                                                                                        'Bedroom',
                                                                                         style: GoogleFonts.inter(
                                                                                           color: const Color(0xffffffff),
                                                                                         ),
@@ -321,6 +328,7 @@ class Scene6 extends StatelessWidget {
                                                                           ),
                                                                         ),
                                                                       ),
+                                                                      ),
                                                                     ),
                                                                   ),
                                                                 ),
@@ -344,6 +352,11 @@ class Scene6 extends StatelessWidget {
                                                                             fem,
                                                                         height: 180.13 *
                                                                             fem,
+                                                                        child:
+                                                                        InkWell(
+                                                                          onTap: () {
+                                                                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scene12()));
+                                                                          },
                                                                         child:
                                                                         Container(
                                                                           decoration:
@@ -430,6 +443,7 @@ class Scene6 extends StatelessWidget {
                                                                             ],
                                                                           ),
                                                                         ),
+                                                                        ),
                                                                       ),
                                                                     ),
                                                                   ),
@@ -465,6 +479,11 @@ class Scene6 extends StatelessWidget {
                                                                             fem,
                                                                         height: 180.13 *
                                                                             fem,
+                                                                        child:
+                                                                        InkWell(
+                                                                          onTap: () {
+                                                                            Navigator.push(context, MaterialPageRoute(builder: (context) => Scene10()));
+                                                                          },
                                                                         child:
                                                                         Container(
                                                                           decoration:
@@ -550,6 +569,7 @@ class Scene6 extends StatelessWidget {
                                                                               ),
                                                                             ],
                                                                           ),
+                                                                        ),
                                                                         ),
                                                                       ),
                                                                     ),
