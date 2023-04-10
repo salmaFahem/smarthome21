@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../adddevice/add_device.dart';
 import '../group/tab_bar.dart';
 import '../home/home.dart';
 import '../navbar/navbar.dart';
@@ -63,7 +64,12 @@ class Scene9 extends StatelessWidget {
                 child:
                 Container(
                   child: MaterialButton(
-                    onPressed: (){},
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Scene8()),
+                      );
+                    },
                     child: Text('Add device',
                       style: GoogleFonts.roboto(
                       fontSize: 20 * ffem,

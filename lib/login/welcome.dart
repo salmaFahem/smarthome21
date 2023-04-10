@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../forgetpassword/forget_pass.dart';
+import '../home/home.dart';
 import '../signup/sign_up.dart';
 
 class Scene extends StatelessWidget {
@@ -190,7 +191,12 @@ class Scene extends StatelessWidget {
                         child: ButtonTheme(
                           minWidth: 200.0,
                           child: MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Scene13()),
+                              );
+                            },
                             elevation: 10,
                             splashColor: const Color(0x5D6978),
                             color: const Color(0xFFD8914D),

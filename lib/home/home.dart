@@ -24,6 +24,15 @@ class Scene13 extends StatelessWidget {
           centerTitle: true,
           title: Text('Home'),
           backgroundColor: Colors.black,
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Scene13()),
+              );
+            },
+          ),
         ),
         endDrawer: NavDrawer(),
         body: Container(
@@ -348,10 +357,10 @@ class Scene13 extends StatelessWidget {
                 Positioned(
                   // iphone142zU5 (166:334)
                   left: 0 * fem,
-                  top: 300 * fem,
+                  bottom: -60 * fem,
                   child: Container(
                     width: 380 * fem,
-                    height: 661 * fem,
+                    height: 400 * fem,
                     decoration: BoxDecoration(
                       color: Color(0x59211d1d),
                       borderRadius: BorderRadius.circular(77 * fem),
@@ -372,10 +381,10 @@ class Scene13 extends StatelessWidget {
                              child: Container(
                               // group655A9K (8:207)
                               width: 200 * fem,
-                              height: 225 * fem,
+                              height: 255 * fem,
                               decoration: const BoxDecoration(
                                 image: DecorationImage(
-                                  fit: BoxFit.cover,
+                                  fit: BoxFit.fitHeight,
                                   image:
                                   AssetImage('images/icon image/Group 667.png'),
                                 ),
@@ -383,35 +392,22 @@ class Scene13 extends StatelessWidget {
                             ),
                             ),
                             Positioned(
-                              left: 5*fem,
-                              top: 150*fem,
+                              left: 0*fem,
+                              top: 130*fem,
                               child: Container(
-                                width: double.infinity,
-                                height: 100 * fem,
+                                // group655A9K (8:207)
+                                width: 500 * fem,
+                                height: 250 * fem,
                                 decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fitWidth,
                                     image:
                                     AssetImage('images/icon image/Group.png'),
                                   ),
                                 ),
                               ),
                             ),
-                            Positioned(
-                              left: 5*fem,
-                              top: 150*fem,
-                              child: Container(
-                                width: double.infinity,
-                                height: 100 * fem,
-                                decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                    fit: BoxFit.cover,
-                                    image:
-                                    AssetImage('images/icon image/Group.png'),
-                                  ),
-                                ),
-                              ),
-                            ),
+
                           ],
                         ),
                       ),

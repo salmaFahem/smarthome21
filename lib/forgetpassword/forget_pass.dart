@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../login/welcome.dart';
+
 class Sceneee extends StatelessWidget {
   const Sceneee({Key? key}) : super(key: key);
 
@@ -174,22 +176,24 @@ class Sceneee extends StatelessWidget {
                                           top: 163.0586595535 * fem,
                                           child: TextButton(
                                             onPressed: () {
-                                              //Navigator.push(
-                                              //context,
-                                              //MaterialPageRoute(builder: (context) => const Scene()));
+                                              // Navigate to the `Scene` screen when the button is pressed
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => const Scene()),
+                                              );
                                             },
                                             style: TextButton.styleFrom(
-                                                primary: Colors.white),
+                                              primary: Colors.white, // set the text color to white
+                                            ),
                                             child: Text(
-                                              "Back to login",
-
+                                              "Back to login", // set the button text
                                               style: GoogleFonts.inter(
-                                                fontSize: 20 * ffem,
-                                                color: const Color(0xffffffff),
+                                                fontSize: 20 * ffem, // set the font size using `ffem`
+                                                color: const Color(0xffffffff), // set the text color to white
                                               ),
                                             ),
+                                          )
 
-                                          ),
                                         ),
                                       ),),
                                     ],

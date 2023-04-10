@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../home/home.dart';
+
 class Scenee extends StatelessWidget {
   const Scenee({Key? key}) : super(key: key);
 
@@ -336,7 +338,12 @@ class Scenee extends StatelessWidget {
                                         child: ButtonTheme(
                                           minWidth: 200.0,
                                           child: MaterialButton(
-                                            onPressed: () {},
+                                            onPressed: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => Scene13()),
+                                              );
+                                            },
                                             elevation: 10,
                                             splashColor: const Color(0x5D6978),
                                             color: const Color(0xFFD8914D),
