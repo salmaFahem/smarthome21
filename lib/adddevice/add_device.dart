@@ -15,9 +15,11 @@ class Scene8 extends StatelessWidget {
     double baseWidth = 377.0; // Define your new base width here
     double baseHeight = 667.0; // Define your new base height here
     double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double femHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate fem based on the new base height
     double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
     double scaleFactorHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate scaling factor for height
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
 
 
     return Scaffold(
@@ -62,7 +64,7 @@ class Scene8 extends StatelessWidget {
                   ),
                   child: Container(
                     width: 379 * fem,
-                    height: 558 * fem,
+                    height: 900 * fem*femHeight,
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
                         begin: Alignment(0, -1),

@@ -23,15 +23,7 @@ class Scene13 extends StatelessWidget {
           centerTitle: true,
           title: Text('Home'),
           backgroundColor: Colors.black,
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => Scene13()),
-              );
-            },
-          ),
+
         ),
         endDrawer: NavDrawer(),
         body: Container(

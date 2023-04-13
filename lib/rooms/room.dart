@@ -19,6 +19,7 @@ class Scene6 extends StatelessWidget {
     double baseWidth = 377.0; // Define your new base width here
     double baseHeight = 667.0; // Define your new base height here
     double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double femHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate fem based on the new base height
     double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
     double scaleFactorHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate scaling factor for height
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
@@ -61,7 +62,7 @@ class Scene6 extends StatelessWidget {
                   Container(
                     // autogroupdjxxVRd (4CtmzRL483DspT1vgMDJXX)
                     width: 1045 * fem,
-                    height: 666 * fem,
+                    height: 666 * fem * femHeight,
                     child: Stack(
                       children: [
                         Positioned(
@@ -142,7 +143,7 @@ class Scene6 extends StatelessWidget {
                               top: 120 * fem,
                                 child: Container(
                                   width: 380 * fem,
-                                  height: 440 * fem,
+                                  height: 900*fem*femHeight,
                                   decoration: BoxDecoration(
                                     borderRadius:
                                     BorderRadius.circular(60 * fem),
@@ -172,7 +173,7 @@ class Scene6 extends StatelessWidget {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: 255 * fem,
+                                        height: 255 * fem * femHeight,
                                         width: 380 * fem,
                                           // Add SingleChildScrollView here
                                           child: Container(
@@ -182,7 +183,7 @@ class Scene6 extends StatelessWidget {
                                                 0 * fem,
                                                 0 * fem),
                                             width: 382,
-                                            height: 380,
+                                            height: 380*fem*femHeight,
                                             child: Stack(
                                               children: [
                                                 Positioned(
@@ -190,7 +191,7 @@ class Scene6 extends StatelessWidget {
                                                   top: -10 * fem,
                                                   child: Container(
                                                     width: 349 * fem,
-                                                    height: 270 * fem,
+                                                    height: 270 * fem*femHeight,
                                                     child: Padding(
                                                       padding:
                                                       const EdgeInsets.only(
@@ -858,12 +859,13 @@ class Scene6 extends StatelessWidget {
                                   ),
                                 ),
                             ),
-                            const Tabar(),
+
                           ],
                         )
                       ],
                     ),
                   ),
+                  const Tabar(),
                 ],
               ),
             )));
