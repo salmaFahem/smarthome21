@@ -13,13 +13,12 @@ class Scene8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 377.0; // Define your new base width here
-    double fem = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate fem based on the new base width
-    double scaleFactorWidth = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate scaling factor for width
-    double scaleFactorHeight = MediaQuery.of(context).size.height /
-        baseWidth; // Calculate scaling factor for height
+    double baseHeight = 667.0; // Define your new base height here
+    double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate scaling factor for height
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
 
     return Scaffold(
       appBar: AppBar(
@@ -112,25 +111,6 @@ class Scene8 extends StatelessWidget {
                       ],
                     ),
 
-                  ),
-                ),
-              ),
-              Positioned(
-                // navbarxn1 (37:337)
-                left: 107 * fem,
-                top: 50 * fem,
-                child: Container(
-                  // profil7YR (37:340)
-                  margin:
-                      EdgeInsets.fromLTRB(0 * fem, 0 * fem, 87 * fem, 0 * fem),
-                  child: Text(
-                    'Add device',
-                    style: GoogleFonts.manrope(
-                      fontSize: 33 * ffem,
-                      fontWeight: FontWeight.w600,
-                      height: 0.6857142857 * ffem / fem,
-                      color: Color.fromARGB(255, 0, 0, 0),
-                    ),
                   ),
                 ),
               ),

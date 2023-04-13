@@ -17,13 +17,12 @@ class Scene6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 377.0; // Define your new base width here
-    double fem = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate fem based on the new base width
-    double scaleFactorWidth = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate scaling factor for width
-    double scaleFactorHeight = MediaQuery.of(context).size.height /
-        baseWidth; // Calculate scaling factor for height
+    double baseHeight = 667.0; // Define your new base height here
+    double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate scaling factor for height
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
 
     return Scaffold(
         backgroundColor: Colors.transparent,
@@ -141,7 +140,6 @@ class Scene6 extends StatelessWidget {
                             Positioned(
                               left: 0,
                               top: 120 * fem,
-                              child: SingleChildScrollView(
                                 child: Container(
                                   width: 380 * fem,
                                   height: 440 * fem,
@@ -176,7 +174,6 @@ class Scene6 extends StatelessWidget {
                                       SizedBox(
                                         height: 255 * fem,
                                         width: 380 * fem,
-                                        child: SingleChildScrollView(
                                           // Add SingleChildScrollView here
                                           child: Container(
                                             margin: EdgeInsets.fromLTRB(
@@ -857,11 +854,9 @@ class Scene6 extends StatelessWidget {
                                             ),
                                           ),
                                         ),
-                                      ),
                                     ],
                                   ),
                                 ),
-                              ),
                             ),
                             const Tabar(),
                           ],

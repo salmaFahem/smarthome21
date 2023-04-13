@@ -44,30 +44,29 @@ class _Scene10State extends State<Scene10> {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 377.0; // Define your new base width here
-    double fem = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate fem based on the new base width
-    double scaleFactorWidth = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate scaling factor for width
-    double scaleFactorHeight = MediaQuery.of(context).size.height /
-        baseWidth; // Calculate scaling factor for height
+    double baseHeight = 667.0; // Define your new base height here
+    double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate scaling factor for height
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
 
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Living room'),
+          title: const Text('Living room'),
           backgroundColor: Colors.black,
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Scene6()),
+                MaterialPageRoute(builder: (context) => const Scene6()),
               );
             },
           ),
         ),
-        endDrawer: NavDrawer(),
+        endDrawer: const NavDrawer(),
         body: Container(
             width: double.infinity,
             child: Container(
@@ -86,16 +85,16 @@ class _Scene10State extends State<Scene10> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20.0),
                     ),
-                    child: Stack(children: [
-                      const Tabar(),
-                      Container(
+                    child: Stack(
+                        children: [
+                          Container(
                           width: 900 * fem,
                           height: 550 * fem,
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0),
                             borderRadius: BorderRadius.circular(20.0),
                           ),
-                          margin: EdgeInsets.only(top: 6.0, bottom: 100.0),
+                          margin: const EdgeInsets.only(top: 6.0, bottom: 100.0),
                           child: SingleChildScrollView(
                               child: Stack(children: [
                             Wrap(
@@ -109,7 +108,7 @@ class _Scene10State extends State<Scene10> {
                                         WrapCrossAlignment.center,
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.only(
+                                        margin: const EdgeInsets.only(
                                             top: 0.0, bottom: 0.0),
                                         width: 175 * fem,
                                         height: 250 * fem,
@@ -137,8 +136,8 @@ class _Scene10State extends State<Scene10> {
                                                             height: 152 * fem,
                                                             decoration: BoxDecoration(
                                                               border:
-                                                              Border.all(color: Color(0xffffffff)),
-                                                              color: Color.fromARGB(86, 0, 0, 0),
+                                                              Border.all(color: const Color(0xffffffff)),
+                                                              color: const Color.fromARGB(86, 0, 0, 0),
                                                               borderRadius:
                                                               BorderRadius.circular(24 * fem),
                                                             ),
@@ -177,10 +176,10 @@ class _Scene10State extends State<Scene10> {
                                                 decoration: BoxDecoration(
                                                   borderRadius:
                                                       BorderRadius.circular(50),
-                                                  color: Color.fromARGB(
+                                                  color: const Color.fromARGB(
                                                       86, 0, 0, 0),
                                                   border: Border.all(
-                                                      color: Color.fromARGB(
+                                                      color: const Color.fromARGB(
                                                           255, 255, 255, 255)),
                                                 ),
                                                 child: DropdownButton<String>(
@@ -192,7 +191,7 @@ class _Scene10State extends State<Scene10> {
                                                   ),
                                                   iconSize: 20,
                                                   elevation: 10,
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                     color: Color.fromRGBO(
                                                         255, 107, 89, 1),
                                                     fontSize: 15,
@@ -228,7 +227,7 @@ class _Scene10State extends State<Scene10> {
                                         WrapCrossAlignment.center,
                                     children: [
                                       Container(
-                                        margin: EdgeInsets.only(
+                                        margin: const EdgeInsets.only(
                                             top: 0.0, bottom: 0.0),
                                         width: 175 * fem,
                                         height: 250 * fem,
@@ -249,10 +248,10 @@ class _Scene10State extends State<Scene10> {
                                                 decoration: BoxDecoration(
                                                   borderRadius:
                                                       BorderRadius.circular(50),
-                                                  color: Color.fromARGB(
+                                                  color: const Color.fromARGB(
                                                       86, 0, 0, 0),
                                                   border: Border.all(
-                                                      color: Color.fromARGB(
+                                                      color: const Color.fromARGB(
                                                           255, 255, 255, 255)),
                                                 ),
                                                 child: DropdownButton<String>(
@@ -264,7 +263,7 @@ class _Scene10State extends State<Scene10> {
                                                   ),
                                                   iconSize: 20,
                                                   elevation: 10,
-                                                  style: TextStyle(
+                                                  style: const TextStyle(
                                                     color: Color.fromRGBO(
                                                         255, 107, 89, 1),
                                                     fontSize: 15,
@@ -312,8 +311,8 @@ class _Scene10State extends State<Scene10> {
                                                               height: 152 * fem,
                                                               decoration: BoxDecoration(
                                                                 border:
-                                                                Border.all(color: Color(0xffffffff)),
-                                                                color: Color.fromARGB(86, 0, 0, 0),
+                                                                Border.all(color: const Color(0xffffffff)),
+                                                                color: const Color.fromARGB(86, 0, 0, 0),
                                                                 borderRadius:
                                                                 BorderRadius.circular(24 * fem),
                                                               ),
@@ -328,7 +327,7 @@ class _Scene10State extends State<Scene10> {
                                                                   width: 159 * fem,
                                                                   height: 177 * fem,
                                                                 ),
-                                                                duration: Duration(milliseconds: 0),
+                                                                duration: const Duration(milliseconds: 0),
                                                                 crossFadeState: _bool2
                                                                     ? CrossFadeState.showFirst
                                                                     : CrossFadeState.showSecond,
@@ -354,7 +353,7 @@ class _Scene10State extends State<Scene10> {
                                       WrapCrossAlignment.center,
                                       children: [
                                   Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                   top: 0.0, bottom: 0.0),
                                   width: 175 * fem,
                                   height: 250 * fem,
@@ -384,8 +383,8 @@ class _Scene10State extends State<Scene10> {
                                                           height: 152 * fem,
                                                           decoration: BoxDecoration(
                                                             border:
-                                                            Border.all(color: Color(0xffffffff)),
-                                                            color: Color.fromARGB(86, 0, 0, 0),
+                                                            Border.all(color: const Color(0xffffffff)),
+                                                            color: const Color.fromARGB(86, 0, 0, 0),
                                                             borderRadius:
                                                             BorderRadius.circular(24 * fem),
                                                           ),
@@ -400,7 +399,7 @@ class _Scene10State extends State<Scene10> {
                                                               width: 159 * fem,
                                                               height: 177 * fem,
                                                             ),
-                                                            duration: Duration(milliseconds: 0),
+                                                            duration: const Duration(milliseconds: 0),
                                                             crossFadeState: _bool
                                                                 ? CrossFadeState.showFirst
                                                                 : CrossFadeState.showSecond,
@@ -429,10 +428,10 @@ class _Scene10State extends State<Scene10> {
                                             decoration: BoxDecoration(
                                               borderRadius:
                                               BorderRadius.circular(50),
-                                              color: Color.fromARGB(
+                                              color: const Color.fromARGB(
                                                   86, 0, 0, 0),
                                               border: Border.all(
-                                                  color: Color.fromARGB(
+                                                  color: const Color.fromARGB(
                                                       255, 255, 255, 255)),
                                             ),
                                             child: DropdownButton<String>(
@@ -444,7 +443,7 @@ class _Scene10State extends State<Scene10> {
                                               ),
                                               iconSize: 20,
                                               elevation: 10,
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                 color: Color.fromRGBO(
                                                     255, 107, 89, 1),
                                                 fontSize: 15,
@@ -480,7 +479,7 @@ class _Scene10State extends State<Scene10> {
                                       WrapCrossAlignment.center,
                                       children: [
                                   Container(
-                                  margin: EdgeInsets.only(
+                                  margin: const EdgeInsets.only(
                                   top: 0.0, bottom: 0.0),
                                   width: 175 * fem,
                                   height: 250 * fem,
@@ -510,8 +509,8 @@ class _Scene10State extends State<Scene10> {
                                                           height: 152 * fem,
                                                           decoration: BoxDecoration(
                                                             border:
-                                                            Border.all(color: Color(0xffffffff)),
-                                                            color: Color.fromARGB(86, 0, 0, 0),
+                                                            Border.all(color: const Color(0xffffffff)),
+                                                            color: const Color.fromARGB(86, 0, 0, 0),
                                                             borderRadius:
                                                             BorderRadius.circular(24 * fem),
                                                           ),
@@ -526,7 +525,7 @@ class _Scene10State extends State<Scene10> {
                                                               width: 159 * fem,
                                                               height: 177 * fem,
                                                             ),
-                                                            duration: Duration(milliseconds: 0),
+                                                            duration: const Duration(milliseconds: 0),
                                                             crossFadeState: _bool1
                                                                 ? CrossFadeState.showFirst
                                                                 : CrossFadeState.showSecond,
@@ -555,10 +554,10 @@ class _Scene10State extends State<Scene10> {
                                             decoration: BoxDecoration(
                                               borderRadius:
                                               BorderRadius.circular(50),
-                                              color: Color.fromARGB(
+                                              color: const Color.fromARGB(
                                                   86, 0, 0, 0),
                                               border: Border.all(
-                                                  color: Color.fromARGB(
+                                                  color: const Color.fromARGB(
                                                       255, 255, 255, 255)),
                                             ),
                                             child: DropdownButton<String>(
@@ -570,7 +569,7 @@ class _Scene10State extends State<Scene10> {
                                               ),
                                               iconSize: 20,
                                               elevation: 10,
-                                              style: TextStyle(
+                                              style: const TextStyle(
                                                 color: Color.fromRGBO(
                                                     255, 107, 89, 1),
                                                 fontSize: 15,
@@ -608,7 +607,7 @@ class _Scene10State extends State<Scene10> {
                                         children: [
                                           Container(
                                             margin:
-                                            EdgeInsets.only(left: 20.0, bottom: 0.0),
+                                            const EdgeInsets.only(left: 20.0, bottom: 0.0),
                                             width: 130*fem,
                                             height: 130*fem,
                                             child: ClipRect(
@@ -621,8 +620,8 @@ class _Scene10State extends State<Scene10> {
                                                 height: 152 * fem,
                                                 decoration: BoxDecoration(
                                                   border:
-                                                  Border.all(color: Color(0xffffffff)),
-                                                  color: Color.fromARGB(86, 0, 0, 0),
+                                                  Border.all(color: const Color(0xffffffff)),
+                                                  color: const Color.fromARGB(86, 0, 0, 0),
                                                   borderRadius:
                                                   BorderRadius.circular(24 * fem),
                                                 ),
@@ -655,7 +654,7 @@ class _Scene10State extends State<Scene10> {
                                                           isScrollControlled: true,
                                                           context: context,
                                                           builder: (context) =>
-                                                              Scene9()); // <-- Add the missing closing parenthesis here
+                                                              const Scene9()); // <-- Add the missing closing parenthesis here
                                                     },
                                                     backgroundColor:
                                                     Colors.orangeAccent,
@@ -670,7 +669,13 @@ class _Scene10State extends State<Scene10> {
                                     ],
                                   ),
                                 ])
-                          ])))
-                    ])))));
+                          ]))),
+                          const Tabar(),
+                    ],
+                    ),
+                ),
+            ),
+        ),
+    );
   }
 }

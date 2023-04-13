@@ -41,13 +41,12 @@ class _Scene12State extends State<Scene12> {
   @override
   Widget build(BuildContext context) {
     double baseWidth = 377.0; // Define your new base width here
-    double fem = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate fem based on the new base width
-    double scaleFactorWidth = MediaQuery.of(context).size.width /
-        baseWidth; // Calculate scaling factor for width
-    double scaleFactorHeight = MediaQuery.of(context).size.height /
-        baseWidth; // Calculate scaling factor for height
+    double baseHeight = 667.0; // Define your new base height here
+    double fem = MediaQuery.of(context).size.width / baseWidth; // Calculate fem based on the new base width
+    double scaleFactorWidth = MediaQuery.of(context).size.width / baseWidth; // Calculate scaling factor for width
+    double scaleFactorHeight = MediaQuery.of(context).size.height / baseHeight; // Calculate scaling factor for height
     double ffem = fem * 0.97; // Calculate ffem based on fem and 0.97 factor
+
 
     return Scaffold(
       backgroundColor: Colors.transparent,
@@ -87,7 +86,6 @@ class _Scene12State extends State<Scene12> {
             ),
             child: Stack(
               children: [
-                const Tabar(),
                 Container(
                   width: 900 * fem,
                   height: 550 * fem,
@@ -553,6 +551,7 @@ class _Scene12State extends State<Scene12> {
                 ),
                 ),
                 ),
+                const Tabar(),
               ],
             ),
           ),
